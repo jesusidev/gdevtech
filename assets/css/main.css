@@ -1,0 +1,21 @@
+/*=============================================
+=            1 Tools                         =
+=============================================*/
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato'), local('Lato-Regular'), url("https://fonts.googleapis.com/css?family=Lato:400,300,700");
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato'), local('Lato-Bold'), url("https://fonts.googleapis.com/css?family=Lato:400,300,700");
+}
+/*=======================================
+=      2 Basics                         =
+=======================================*/
+/*===============================
+=            4 Pages            =
+===============================*/
