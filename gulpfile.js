@@ -1,12 +1,11 @@
 //	Include gulp
-var gulp = require('gulp');
-
+var gulp = require('gulp'),
 // Include Plugins
-var stylus = require('gulp-stylus');
-var jade = require('gulp-jade');
-var concat = require('gulp-concat');
-var uglify = require('gulp-uglify');
-var rename = require('gulp-rename');
+	stylus = require('gulp-stylus'),
+	jade = require('gulp-jade'),
+	concat = require('gulp-concat'),
+	uglify = require('gulp-uglify'),
+	rename = require('gulp-rename');
 
 // Compile Stylus
 gulp.task('styles', function(){
@@ -36,13 +35,16 @@ gulp.task('templates', function() {
 
 // Watch Files For Changes
 gulp.task('watch', function(){
+	// Watching Javascript Files
 	gulp.watch('assets/js/*.js',['scripts']);
+	// Watching Stylus Files
 	gulp.watch([
 		'assets/css/main.styl',
 		'assets/css/_1tools/*.styl',
 		'assets/css/_2basics/*.styl',
 		'assets/css/_4pages/*.styl'
 		],['styles']);
+	// Watching Jade Files
 	gulp.watch([
 		'views/index.jade',
 		'views/partials/*.jade'
