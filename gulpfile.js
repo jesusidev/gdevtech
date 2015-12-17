@@ -47,6 +47,7 @@ gulp.task('watch', function(){
 	// Watching Jade Files
 	gulp.watch([
 		'views/index.jade',
+		'views/layout/*.jade',
 		'views/partials/*.jade'
 		],['templates']);
 });

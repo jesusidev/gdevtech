@@ -19,3 +19,50 @@
 /*===============================
 =            4 Pages            =
 ===============================*/
+.navbar-wrapper {
+  overflow: hidden;
+}
+.navbar {
+  background-color: #196fc0;
+}
+.navbar-brand {
+  padding-top: 0;
+  color: #fff;
+}
+.navbar-brand:hover {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 3px solid #fff;
+  padding-bottom: 12px;
+}
+.navbar-brand>img {
+  width: 65px;
+}
+@media (max-width: 767px) {
+  .navbar-brand>img {
+    margin-left: 10px;
+  }
+}
+.nav>li>a {
+  color: #fff;
+}
+.nav>li>a:focus {
+  background-color: rgba(238,238,238,0);
+}
+.nav>li>a:hover {
+  background-color: rgba(238,238,238,0);
+  text-decoration: none;
+  border-bottom: 3px solid #fff;
+  padding-bottom: 12px;
+}
+@media (max-width: 767px) {
+  .nav>li>a {
+    margin-left: 10px;
+  }
+  .nav>li>a:hover {
+    font-weight: 600;
+  }
+}
+.navbar-toggle .icon-bar {
+  background-color: #fff;
+}
