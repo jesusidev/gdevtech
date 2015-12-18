@@ -52,6 +52,12 @@ left: 28px:hover {
 .navbar-nav {
   float: right;
 }
+@media (max-width: 767px) {
+  .navbar-nav {
+    float: none;
+    margin: 0 auto;
+  }
+}
 .nav>li>a {
   color: #fff;
 }
