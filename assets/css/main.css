@@ -22,6 +22,10 @@
 .navbar {
   background-color: #196fc0;
 }
+.active {
+  background-color: #3e7ae3;
+  border-bottom: 3px solid #fff;
+}
 .navbar-brand {
   padding-top: 0;
   color: #fff;
@@ -52,10 +56,10 @@ left: 28px:hover {
   color: #fff;
 }
 .nav>li>a:focus {
-  background-color: rgba(238,238,238,0);
+  background-color: #3e7ae3;
 }
 .nav>li>a:hover {
-  background-color: rgba(238,238,238,0);
+  background-color: #3e7ae3;
   text-decoration: none;
   border-bottom: 3px solid #fff;
   padding-bottom: 12px;
