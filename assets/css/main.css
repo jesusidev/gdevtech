@@ -16,9 +16,6 @@
 /*=======================================
 =      2 Basics                         =
 =======================================*/
-/*===============================
-=            4 Pages            =
-===============================*/
 .navbar-wrapper {
   overflow: hidden;
 }
@@ -28,8 +25,13 @@
 .navbar-brand {
   padding-top: 0;
   color: #fff;
+  background-color: #3e7ae3;
 }
-.navbar-brand:hover {
+width: 102px:hover,
+float: left:hover,
+position: absolute:hover,
+display: inline-block:hover,
+left: 28px:hover {
   color: #fff;
   text-decoration: none;
   border-bottom: 3px solid #fff;
@@ -42,6 +44,9 @@
   .navbar-brand>img {
     margin-left: 10px;
   }
+}
+.navbar-nav {
+  float: right;
 }
 .nav>li>a {
   color: #fff;
@@ -66,3 +71,6 @@
 .navbar-toggle .icon-bar {
   background-color: #fff;
 }
+/*===============================
+=            4 Pages            =
+===============================*/
