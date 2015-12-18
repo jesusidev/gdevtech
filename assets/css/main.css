@@ -84,3 +84,47 @@ left: 28px:hover {
 /*===============================
 =            4 Pages            =
 ===============================*/
+header {
+  height: 100vh;
+  background-image: url("http://www.trewmarketing.com/smartmarketingblog/wp-content/uploads/2015/11/10-Web-Design-Trends-for-2015.png");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header:before {
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 0;
+  background-color: rgba(0,0,0,0.52);
+}
+header>h1 {
+  color: #fff;
+  z-index: 100;
+}
+header>h2 {
+  color: #fff;
+  z-index: 100;
+}
+header>h4 {
+  color: #fff;
+  z-index: 100;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 7px;
+  text-transform: uppercase;
+}
+header>img {
+  z-index: 100;
+}
+header>p {
+  margin: 0;
+  width: 495px;
+  color: #fff;
+  z-index: 100;
+}

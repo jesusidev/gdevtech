@@ -1,7 +1,7 @@
-include html-head.jade
+doctype html
+html(lang="en")
 	head
 		block title
-			// Title
 			title Test Jade
 		// Meta
 		meta(charset="utf-8")
@@ -9,6 +9,9 @@ include html-head.jade
 		meta(name="description", content="Javascript testing stuff")
 		meta(name="keywords", content="Keywords stuff here")
 		meta(name="author", content="Guzman, Jesus")
+		meta(name="msapplication-TileColor", content="#ffffff")
+		meta(name="msapplication-TileImage", content="/ms-icon-144x144.png")
+		meta(name="theme-color", content="#ffffff")
 		// favicon
 		link(rel="apple-touch-icon", sizes="57x57", href="./assets/img/favicon/apple-icon-57x57.png")
 		link(rel="apple-touch-icon", sizes="60x60", href="./assets/img/favicon/apple-icon-60x60.png")
@@ -28,3 +31,5 @@ include html-head.jade
 		link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css", integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7", crossorigin="anonymous")
 		// CSS Customization
 		link(rel="stylesheet", href="assets/css/main.css")
+	body
+		block content
