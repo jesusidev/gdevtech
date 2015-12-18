@@ -124,7 +124,11 @@ header>img {
 }
 header>p {
   margin: 0;
-  width: 90%;
   color: #fff;
   z-index: 100;
+}
+@media (max-width: 767px) {
+  header>p {
+    width: 80%;
+  }
 }
