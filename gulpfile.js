@@ -42,6 +42,7 @@ gulp.task('watch', function(){
 		'assets/css/main.styl',
 		'assets/css/_1tools/*.styl',
 		'assets/css/_2basics/*.styl',
+		'assets/css/_3modules/*.css',
 		'assets/css/_4pages/*.styl'
 		],['styles']);
 	// Watching Jade Files
