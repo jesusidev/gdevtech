@@ -160,6 +160,20 @@ header>p {
   font-weight: 700;
   text-align: right;
 }
+@media (max-width: 767px) {
+  .lead {
+    text-align: center;
+  }
+}
+.sub-lead {
+  font-weight: 400;
+  text-align: right;
+}
+@media (max-width: 767px) {
+  .sub-lead {
+    text-align: center;
+  }
+}
 .diamond-logo {
   width: 0;
   height: 0;
