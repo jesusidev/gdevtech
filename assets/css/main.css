@@ -156,3 +156,60 @@ header>p {
   letter-spacing: 2px;
   word-spacing: 2px;
 }
+.lead {
+  font-weight: 700;
+  text-align: right;
+}
+.diamond-logo {
+  width: 0;
+  height: 0;
+  border: 115px solid transparent;
+  border-bottom-color: #0028d5;
+  position: relative;
+  top: -85px;
+  left: 70px;
+}
+@media (max-width: 767px) {
+  .diamond-logo {
+    display: none;
+  }
+}
+.diamond-logo:after {
+  content: '';
+  position: absolute;
+  left: -115px;
+  top: 115px;
+  width: 0;
+  height: 0;
+  border: 115px solid transparent;
+  border-top-color: #0028d5;
+}
+@media (max-width: 767px) {
+  .diamond-logo:after {
+    display: none;
+  }
+}
+.diamond-logo>img {
+  position: relative;
+  z-index: 100;
+  top: 65px;
+  left: -71px;
+  height: 105px;
+}
+@media (max-width: 767px) {
+  .diamond-logo>img {
+    display: none;
+  }
+}
+.nth-row {
+  margin-left: -15px;
+  margin-right: -15px;
+  position: relative;
+  top: -109px;
+}
+@media (max-width: 767px) {
+  .nth-row {
+    position: inherit;
+    top: 0;
+  }
+}
