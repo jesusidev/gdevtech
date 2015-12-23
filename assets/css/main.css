@@ -231,7 +231,7 @@ header>p {
 }
 .small-diamond>h1 {
   color: #000;
-  -webkit-transform: rotate(45deg);
+  -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
   position: relative;
   right: -17px;
@@ -268,7 +268,7 @@ header>p {
 }
 .small-diamond-even>h1 {
   color: #000;
-  -webkit-transform: rotate(45deg);
+  -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
   position: relative;
   right: -17px;
