@@ -216,8 +216,10 @@ header>p {
   position: relative;
   top: 45px;
   left: 10px;
+  -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
-  box-shadow: 2px 2px 7px 0px #808080;
+  -webkit-box-shadow: 2px 2px 7px 1px #808080;
+  box-shadow: 2px 2px 7px 1px #808080;
 }
 @media (max-width: 767px) {
   .small-diamond {
@@ -229,6 +231,7 @@ header>p {
 }
 .small-diamond>h1 {
   color: #000;
+  -webkit-transform: rotate(45deg);
   transform: rotate(-45deg);
   position: relative;
   right: -17px;
@@ -250,7 +253,9 @@ header>p {
   position: relative;
   top: 45px;
   left: 10px;
+  -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
+  -webkit-box-shadow: 2px 2px 7px 1px #808080;
   box-shadow: 2px 2px 7px 1px #808080;
 }
 @media (max-width: 767px) {
@@ -263,6 +268,7 @@ header>p {
 }
 .small-diamond-even>h1 {
   color: #000;
+  -webkit-transform: rotate(45deg);
   transform: rotate(-45deg);
   position: relative;
   right: -17px;
