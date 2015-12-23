@@ -251,7 +251,7 @@ header>p {
   top: 45px;
   left: 10px;
   transform: rotate(45deg);
-  box-shadow: 2px 2px 7px 0px #808080;
+  box-shadow: 2px 2px 7px 1px #808080;
 }
 @media (max-width: 767px) {
   .small-diamond-even {
