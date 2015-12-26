@@ -388,6 +388,18 @@ header>p {
   margin-right: -50%;
   transform: translate(-50%, -50%);
 }
+.intro-section .btn-primary {
+  margin: 0;
+  position: absolute;
+  background-color: #0028d5;
+  padding: 15px 35px;
+  text-transform: uppercase;
+  cursor: pointer;
+  top: 75%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
 .container-intro {
   width: 70%;
   text-align: center;
