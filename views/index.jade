@@ -5,50 +5,7 @@ block title
 block content
 	include ./layout/header.jade
 	include ./layout/navigation.jade
-	.container
-		.row.top-buffer
-			.col-xs-12.col-md-12
-				h1.text-center.title Hello &#38; Welcome
-				h4.text-center.sub-title - Explore our World -
-		.row
-			.col-xs-12.col-md-12
-				.row
-					.col-xs-12.col-md-4
-						.row
-							.col-xs-10.col-md-10.boxem-odd
-								h4.lead-odd Test Title
-								p.sub-lead-odd Curabitur nulla odio bibendum sit amet facilisis sed lobotis itd justo. Done csec sollicitudin facilisis
-							.col-xs-2.col-md-2
-								.small-diamond
-									h1.glyphicon.glyphicon-star-empty
-					.col-xs-12.col-md-4
-						.diamond-logo
-							img(border="0", alt="G Dev Tech Logo", src="assets/img/logo.png")
-					.col-xs-12.col-md-4
-						.row
-							.col-xs-2.col-md-2
-								.small-diamond-even
-									h1.glyphicon.glyphicon-inbox
-							.col-xs-10.col-md-10.boxem-even
-								h4.lead-even Test Title
-								p.sub-lead-even Curabitur nulla odio bibendum sit amet facilisis sed lobotis itd justo. Done csec sollicitudin facilisis
-				.nth-row
-					.col-xs-12.col-md-4
-						.row
-							.col-xs-10.col-md-10.boxem-odd
-								h4.lead-odd Test Title
-								p.sub-lead-odd Curabitur nulla odio bibendum sit amet facilisis sed lobotis itd justo. Done csec sollicitudin facilisis
-							.col-xs-2.col-md-2
-								.small-diamond
-									h1.glyphicon.glyphicon-heart-empty
-					.col-xs-12.col-md-4
-					.col-xs-12.col-md-4
-						.row
-							.col-xs-2.col-md-2
-								.small-diamond-even
-									h1.glyphicon.glyphicon-screenshot
-							.col-xs-10.col-md-10.boxem-even
-								h4.lead-even Test Title
-								p.sub-lead-even Curabitur nulla odio bibendum sit amet facilisis sed lobotis itd justo. Done csec sollicitudin facilisis
-
+	include ./layout/home.jade
+	include ./layout/intro.jade
+	include ./layout/about.jade
 	include ./partials/foot.jade

@@ -5,13 +5,16 @@ var gulp = require('gulp'),
 	jade = require('gulp-jade'),
 	concat = require('gulp-concat'),
 	uglify = require('gulp-uglify'),
-	rename = require('gulp-rename');
+	rename = require('gulp-rename'),
+	connect = require('gulp-connect');
+
 
 // Compile Stylus
 gulp.task('styles', function(){
 	return gulp.src('assets/css/main.styl')
 		.pipe(stylus())
-		.pipe(gulp.dest('assets/css'));
+		.pipe(gulp.dest('assets/css'))
+		.pipe(connect.reload())
 });
 
 // Concatenate & Minify JS
@@ -22,6 +25,7 @@ gulp.task('scripts', function(){
 		.pipe(rename('main.min.js'))
 		.pipe(uglify())
 		.pipe(gulp.dest('assets/js'))
+		.pipe(connect.reload())
 });
 
 // Compile Jade
@@ -30,7 +34,8 @@ gulp.task('templates', function() {
     .pipe(jade({
       pretty: true
     }))
-    .pipe(gulp.dest('./'));
+    .pipe(gulp.dest('./'))
+    .pipe(connect.reload())
 });
 
 // Watch Files For Changes
@@ -53,6 +58,18 @@ gulp.task('watch', function(){
 		],['templates']);
 });
 
+// Connect to webserver with livereload
+gulp.task('connect', function(){
+	return connect.server({
+		//Update this to the current host 'localhost'
+		host: 'gdevtech.local',
+		port: 6565,
+		livereload: true
+	});
+});
+
 // Default Task
-gulp.task('default', ['styles', 'scripts', 'templates',
-	'watch']);
+gulp.task('default', ['styles', 'scripts', 'templates', 'watch', 'connect']);
+
+// Watch and Connect task only
+gulp.task('startup', ['watch', 'connect']);

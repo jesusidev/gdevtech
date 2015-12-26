@@ -1,1 +1,4 @@
 node_modules/
+.sublime-gulp.cache
+sftp-config.json
+sublime-gulp.log
