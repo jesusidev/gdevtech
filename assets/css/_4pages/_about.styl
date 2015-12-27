@@ -1,0 +1,46 @@
+.med-diamond
+	width: 90px
+	height: 90px
+	display: block
+	margin: 0 auto
+	background-color: rgba(255, 255, 255, 0.72)
+	-webkit-transform: rotate(45deg)
+	transform: rotate(45deg)
+	-webkit-box-shadow: 2px 2px 7px 1px grey
+	box-shadow: 2px 2px 7px 1px grey
+	@media (max-width: 767px)
+		left: -10px
+		width: 60px
+		height: 60px
+		top: 65px
+.med-diamond>h1
+	color: black
+	-webkit-transform: rotate(-45deg)
+	transform: rotate(-45deg)
+	position: relative
+	right: -23px
+	top: 5px
+	font-size: 40px
+	@media (max-width: 767px)
+		right: -18px
+		top: -4px
+		font-size: 30px
+.about-col
+	margin-top: 50px
+	text-align: center
+	overflow: hidden
+.about-col h3
+	margin-bottom: 25px
+	font-weight: 700
+	text-transform: uppercase
+.dash-about
+	display: block
+	margin: 35px auto 25px auto
+	border-bottom: 2px solid #cacaca
+	width: 50px
+.more-link
+	margin-bottom: 30px
+	text-transform: uppercase
+	&:hover
+		color: $main-color
+		cursor: pointer
