@@ -3,6 +3,8 @@ header
 	background-image: url('../img/headerbg.jpg')
 	background-size: cover
 	display: flex
+	display: -ms-flexbox
+	display: -webkit-flex
 	flex-direction: column
 	justify-content: center
 	align-items: center
@@ -90,10 +92,8 @@ header>p
 	position: relative
 	top: 45px
 	left: 57px
-	-webkit-transform: rotate(45deg)
-	transform: rotate(45deg)
-	-webkit-box-shadow: 2px 2px 7px 1px grey
-	box-shadow: 2px 2px 7px 1px grey
+	transform(rotate(45deg))
+	box-shadow(2px 2px 7px 1px grey)
 	@media (max-width: 767px)
 		left: -10px
 		width: 40px
@@ -101,8 +101,7 @@ header>p
 		top: 65px
 .small-diamond>h1
 	color: black
-	-webkit-transform: rotate(-45deg)
-	transform: rotate(-45deg)
+	transform(rotate(-45deg))
 	position: relative
 	right: -17px
 	top: -3px
@@ -119,10 +118,8 @@ header>p
 	position: relative
 	top: 45px
 	left: -25px
-	-webkit-transform: rotate(45deg)
-	transform: rotate(45deg)
-	-webkit-box-shadow: 2px 2px 7px 1px grey
-	box-shadow: 2px 2px 7px 1px grey
+	transform(rotate(45deg))
+	box-shadow(2px 2px 7px 1px grey)
 	@media (max-width: 767px)
 		left: 20px
 		width: 40px
@@ -130,8 +127,7 @@ header>p
 		top: 65px
 .small-diamond-even>h1
 	color: black
-	-webkit-transform: rotate(-45deg)
-	transform: rotate(-45deg)
+	transform(rotate(-45deg))
 	position: relative
 	right: -17px
 	top: -3px
@@ -143,8 +139,7 @@ header>p
 .dash
 	display: block
 	position: relative
-	-webkit-transform: rotate(-45deg)
-	transform: rotate(-45deg)
+	transform(rotate(-45deg))
 	border-bottom: 2px solid #CACACA
 	left: 52px
 	top: 20px

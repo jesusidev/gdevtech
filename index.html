@@ -40,9 +40,9 @@
         <embed src="assets/img/logo.png" alt="G Dev Tech Logo">
       </object>
       <h2>We Know It Works</h2>
-      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis illo quis suscipit...</p><a href="#nav1" class="glyphicon glyphicon-circle-arrow-down animated bounceInUp"></a>
+      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis illo quis suscipit...</p><a href="#nav" class="glyphicon glyphicon-circle-arrow-down animated bounceInUp"></a>
     </header>
-    <div id="nav1" class="navbar-wrapper">
+    <div id="nav" class="navbar-wrapper">
       <div class="row">
         <nav class="navbar navbar-static-top">
           <div class="container">
@@ -51,9 +51,9 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="#">HOME</a></li>
-                <li><a href="#">INTRO</a></li>
-                <li><a href="#">ABOUT</a></li>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#intro">INTRO</a></li>
+                <li><a href="#about">ABOUT</a></li>
                 <li><a href="#">SERVICES</a></li>
                 <li><a href="#">TEAM</a></li>
                 <li><a href="#">HISTORY</a></li>
@@ -67,7 +67,7 @@
         </nav>
       </div>
     </div>
-    <div class="container">
+    <div id="home" class="container">
       <div class="row top-buffer">
         <div class="col-xs-12 col-md-12">
           <h1 class="text-center title">Hello &#38; Welcome</h1>
@@ -139,14 +139,14 @@
         </div>
       </div>
     </div>
-    <div class="intro-section top-buffer">
+    <div id="intro" class="intro-section top-buffer">
       <div class="container-intro">
         <h4>Let's build your next dream project</h4>
         <p>We make our <span class="text-over">work look good</span> &#38; have experience in <br> the creation of brand identities for <span class="text-over">print &#38; web</span>, with a difference.</p>
         <div class="btn-primary">View Case Studies</div>
       </div>
     </div>
-    <div class="container">
+    <div id="about" class="container">
       <div class="row top-buffer">
         <div class="col-xs-12 col-md-12">
           <h1 class="text-center title">About G Dev Tech Work</h1>
@@ -200,7 +200,45 @@
         </div>
       </div>
     </div>
+    <!--Back to Top-->
+    <div class="top">
+      <div class="top-inner glyphicon glyphicon-menu-up"></div>
+    </div>
     <!-- JQuery--><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript--><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <!--Smooth Scroll-->
+    <script type="text/javascript">
+      $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html,body').animate({
+                scrollTop: target.offset().top
+              }, 1500);
+              return false;
+            }
+          }
+        });
+      });
+      $(document).ready(function() {
+          var offset = 400;
+          var duration = 500;
+          $(window).scroll(function() {
+              if ($(this).scrollTop() > offset) {
+                  $('.top').fadeIn(duration);
+              } else {
+                  $('.top').fadeOut(duration);
+              }
+          });
+          
+          $('.top').click(function(event) {
+              event.preventDefault();
+              $('html, body').animate({scrollTop: 0}, 1500);
+              return false;
+          })
+      });
+    </script>
   </body>
 </html>
