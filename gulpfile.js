@@ -20,13 +20,12 @@ gulp.task('styles', function(){
 
 // Concatenate & Minify JS
 gulp.task('scripts', function(){
-	return gulp.src('assets/js/*.js')
+	return gulp.src('assets/js/functions.js')
 		.pipe(concat('main.js'))
 		.pipe(gulp.dest('assets/js'))
 		.pipe(rename('main.min.js'))
 		.pipe(uglify())
 		.pipe(gulp.dest('assets/js'))
-		.pipe(connect.reload())
 });
 
 // Compile Jade

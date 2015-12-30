@@ -6,35 +6,6 @@
 // Latest compiled and minified JavaScript
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 //Smooth Scroll
-script(type='text/javascript').
-	$(function() {
-	  $('a[href*=#]:not([href=#])').click(function() {
-	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-	      var target = $(this.hash);
-	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-	      if (target.length) {
-	        $('html,body').animate({
-	          scrollTop: target.offset().top
-	        }, 1500);
-	        return false;
-	      }
-	    }
-	  });
-	});
-	$(document).ready(function() {
-	    var offset = 400;
-	    var duration = 500;
-	    $(window).scroll(function() {
-	        if ($(this).scrollTop() > offset) {
-	            $('.top').fadeIn(duration);
-	        } else {
-	            $('.top').fadeOut(duration);
-	        }
-	    });
-	    
-	    $('.top').click(function(event) {
-	        event.preventDefault();
-	        $('html, body').animate({scrollTop: 0}, 1500);
-	        return false;
-	    })
-	});
+script(src="../assets/js/main.min.js")
+| 
+| </html>

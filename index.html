@@ -1,244 +1,220 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
+<!--[if IE 8]>
+<html lang="en" class="ie8">
+<![endif]-->
+<!--[if IE 9]>
+<html lang="en" class="ie9">
+<![endif]-->
+<!--[if !IE]><!-->
 <html lang="en">
-  <head>
-    <!-- Title Of Page-->
-    <title>G Dev Tech</title>
-    <!-- Meta-->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Javascript testing stuff">
-    <meta name="keywords" content="Keywords stuff here">
-    <meta name="author" content="Guzman, Jesus">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-    <!-- favicon-->
-    <link rel="apple-touch-icon" sizes="57x57" href="./assets/img/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="./assets/img/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="./assets/img/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="./assets/img/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="./assets/img/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="./assets/img/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="./assets/img/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="./assets/img/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="./assets/img/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="./assets/img/favicon/manifest.json">
-    <!-- Latest compiled and minified CSS-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <!-- CSS Customization-->
-    <link rel="stylesheet" href="assets/css/main.css">
-  </head>
-  <body>
-    <header>
-      <h1>G Dev Tech</h1>
-      <h4>Focusing on Design &#38; Technology</h4>
-      <object>
-        <embed src="assets/img/logo.png" alt="G Dev Tech Logo">
-      </object>
-      <h2>We Know It Works</h2>
-      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis illo quis suscipit...</p><a href="#nav" class="glyphicon glyphicon-circle-arrow-down animated bounceInUp"></a>
-    </header>
-    <div id="nav" class="navbar-wrapper">
-      <div class="row">
-        <nav class="navbar navbar-static-top">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="#" class="navbar-brand"><img border="0" alt="G Dev Tech Logo" src="assets/img/logo.png"></a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li><a href="#home">HOME</a></li>
-                <li><a href="#intro">INTRO</a></li>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#">SERVICES</a></li>
-                <li><a href="#">TEAM</a></li>
-                <li><a href="#">HISTORY</a></li>
-                <li><a href="#">WORKS</a></li>
-                <li><a href="#">PRICES</a></li>
-                <li><a href="#">CONTACT</a></li>
-                <li><a href="#">BLOG</a></li>
-              </ul>
-            </div>
+<!--<![endif]-->
+<head>
+  <!-- Title Of Page-->
+  <title>G Dev Tech</title>
+  <!-- Meta-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Javascript testing stuff">
+  <meta name="keywords" content="Keywords stuff here">
+  <meta name="author" content="Guzman, Jesus">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <!-- favicon-->
+  <link rel="apple-touch-icon" sizes="57x57" href="./assets/img/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./assets/img/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./assets/img/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./assets/img/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./assets/img/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./assets/img/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./assets/img/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./assets/img/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./assets/img/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./assets/img/favicon/manifest.json">
+  <!-- Latest compiled and minified CSS-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <!-- CSS Customization-->
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+  <header>
+    <h1>G Dev Tech</h1>
+    <h4>Focusing on Design &#38; Technology</h4>
+    <object>
+      <embed src="assets/img/logo.png" alt="G Dev Tech Logo">
+    </object>
+    <h2>We Know It Works</h2>
+    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis illo quis suscipit...</p><a href="#nav" class="glyphicon glyphicon-circle-arrow-down animated bounceInUp"></a>
+  </header>
+  <div id="nav" class="navbar-wrapper">
+    <div class="row">
+      <nav class="navbar navbar-static-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="#" class="navbar-brand"><img border="0" alt="G Dev Tech Logo" src="assets/img/logo.png"></a>
           </div>
-        </nav>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="#home">HOME</a></li>
+              <li><a href="#intro">INTRO</a></li>
+              <li><a href="#about">ABOUT</a></li>
+              <li><a href="#">SERVICES</a></li>
+              <li><a href="#">TEAM</a></li>
+              <li><a href="#">HISTORY</a></li>
+              <li><a href="#">WORKS</a></li>
+              <li><a href="#">PRICES</a></li>
+              <li><a href="#">CONTACT</a></li>
+              <li><a href="#">BLOG</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <div id="home" class="container">
+    <div class="row top-buffer">
+      <div class="col-xs-12 col-md-12">
+        <h1 class="text-center title">Hello &#38; Welcome</h1>
+        <h4 class="text-center sub-title">- Explore our World -</h4>
       </div>
     </div>
-    <div id="home" class="container">
-      <div class="row top-buffer">
-        <div class="col-xs-12 col-md-12">
-          <h1 class="text-center title">Hello &#38; Welcome</h1>
-          <h4 class="text-center sub-title">- Explore our World -</h4>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-12 col-md-12">
-          <div class="row">
-            <div class="col-xs-12 col-md-4">
-              <div class="row">
-                <div class="col-xs-10 col-md-10 boxem-odd">
-                  <h4 class="lead-odd">Test Title</h4>
-                  <p class="sub-lead-odd">Curabitur nulla odio bibendum sit amet facilisis sed lobotis itd justo. Done csec sollicitudin facilisis</p>
-                </div>
-                <div class="col-xs-2 col-md-2">
-                  <div class="small-diamond">
-                    <h1 class="glyphicon glyphicon-star-empty"></h1><span class="dash"></span>
-                  </div>
-                </div>
+    <div class="row">
+      <div class="col-xs-12 col-md-12">
+        <div class="row">
+          <div class="col-xs-12 col-md-4">
+            <div class="row">
+              <div class="col-xs-10 col-md-10 boxem-odd">
+                <h4 class="lead-odd">Test Title</h4>
+                <p class="sub-lead-odd">Curabitur nulla odio bibendum sit amet facilisis sed lobotis itd justo. Done csec sollicitudin facilisis</p>
               </div>
-            </div>
-            <div class="col-xs-12 col-md-4">
-              <div class="diamond-logo"><img border="0" alt="G Dev Tech Logo" src="assets/img/logo.png"></div>
-            </div>
-            <div class="col-xs-12 col-md-4">
-              <div class="row">
-                <div class="col-xs-2 col-md-2">
-                  <div class="small-diamond-even">
-                    <h1 class="glyphicon glyphicon-inbox"></h1><span class="dash"></span>
-                  </div>
-                </div>
-                <div class="col-xs-10 col-md-10 boxem-even">
-                  <h4 class="lead-even">Test Title</h4>
-                  <p class="sub-lead-even">Curabitur nulla odio bibendum sit amet facilisis sed lobotis itd justo. Done csec sollicitudin facilisis</p>
+              <div class="col-xs-2 col-md-2">
+                <div class="small-diamond">
+                  <h1 class="glyphicon glyphicon-star-empty"></h1><span class="dash"></span>
                 </div>
               </div>
             </div>
           </div>
-          <div class="nth-row">
-            <div class="col-xs-12 col-md-4">
-              <div class="row">
-                <div class="col-xs-10 col-md-10 boxem-odd">
-                  <h4 class="lead-odd">Test Title</h4>
-                  <p class="sub-lead-odd">Curabitur nulla odio bibendum sit amet facilisis sed lobotis itd justo. Done csec sollicitudin facilisis</p>
-                </div>
-                <div class="col-xs-2 col-md-2">
-                  <div class="small-diamond">
-                    <h1 class="glyphicon glyphicon-heart-empty"></h1>
-                  </div>
+          <div class="col-xs-12 col-md-4">
+            <div class="diamond-logo"><img border="0" alt="G Dev Tech Logo" src="assets/img/logo.png"></div>
+          </div>
+          <div class="col-xs-12 col-md-4">
+            <div class="row">
+              <div class="col-xs-2 col-md-2">
+                <div class="small-diamond-even">
+                  <h1 class="glyphicon glyphicon-inbox"></h1><span class="dash"></span>
                 </div>
               </div>
-            </div>
-            <div class="col-xs-12 col-md-4"></div>
-            <div class="col-xs-12 col-md-4">
-              <div class="row">
-                <div class="col-xs-2 col-md-2">
-                  <div class="small-diamond-even">
-                    <h1 class="glyphicon glyphicon-screenshot"></h1>
-                  </div>
-                </div>
-                <div class="col-xs-10 col-md-10 boxem-even">
-                  <h4 class="lead-even">Test Title</h4>
-                  <p class="sub-lead-even">Curabitur nulla odio bibendum sit amet facilisis sed lobotis itd justo. Done csec sollicitudin facilisis</p>
-                </div>
+              <div class="col-xs-10 col-md-10 boxem-even">
+                <h4 class="lead-even">Test Title</h4>
+                <p class="sub-lead-even">Curabitur nulla odio bibendum sit amet facilisis sed lobotis itd justo. Done csec sollicitudin facilisis</p>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div id="intro" class="intro-section top-buffer">
-      <div class="container-intro">
-        <h4>Let's build your next dream project</h4>
-        <p>We make our <span class="text-over">work look good</span> &#38; have experience in <br> the creation of brand identities for <span class="text-over">print &#38; web</span>, with a difference.</p>
-        <div class="btn-primary">View Case Studies</div>
-      </div>
-    </div>
-    <div id="about" class="container">
-      <div class="row top-buffer">
-        <div class="col-xs-12 col-md-12">
-          <h1 class="text-center title">About G Dev Tech Work</h1>
-          <h4 class="text-center sub-title">- What we do for you -</h4>
-        </div>
-      </div>
-      <div class="row top-buffer">
-        <div class="col-xs-12 col-md-12">
-          <div class="row">
-            <div class="col-xs-12 col-md-3">
-              <div class="med-diamond">
-                <h1 class="glyphicon glyphicon-heart-empty"></h1>
+        <div class="nth-row">
+          <div class="col-xs-12 col-md-4">
+            <div class="row">
+              <div class="col-xs-10 col-md-10 boxem-odd">
+                <h4 class="lead-odd">Test Title</h4>
+                <p class="sub-lead-odd">Curabitur nulla odio bibendum sit amet facilisis sed lobotis itd justo. Done csec sollicitudin facilisis</p>
               </div>
-              <div class="about-col">
-                <h3>Achievements</h3>
-                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse libero, eum? Nostrum numquam temporibus ducimus quasi</p><span class="dash-about"></span>
-                <p class="more-link">Learn More</p>
+              <div class="col-xs-2 col-md-2">
+                <div class="small-diamond">
+                  <h1 class="glyphicon glyphicon-heart-empty"></h1>
+                </div>
               </div>
             </div>
-            <div class="col-xs-12 col-md-3">
-              <div class="med-diamond">
-                <h1 class="glyphicon glyphicon-edit"></h1>
+          </div>
+          <div class="col-xs-12 col-md-4"></div>
+          <div class="col-xs-12 col-md-4">
+            <div class="row">
+              <div class="col-xs-2 col-md-2">
+                <div class="small-diamond-even">
+                  <h1 class="glyphicon glyphicon-screenshot"></h1>
+                </div>
               </div>
-              <div class="about-col">
-                <h3>Clean Design</h3>
-                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse libero, eum? Nostrum numquam temporibus ducimus quasi</p><span class="dash-about"></span>
-                <p class="more-link">Learn More</p>
-              </div>
-            </div>
-            <div class="col-xs-12 col-md-3">
-              <div class="med-diamond">
-                <h1 class="glyphicon glyphicon-resize-full"></h1>
-              </div>
-              <div class="about-col">
-                <h3>Retina Ready</h3>
-                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse libero, eum? Nostrum numquam temporibus ducimus quasi</p><span class="dash-about"></span>
-                <p class="more-link">Learn More</p>
-              </div>
-            </div>
-            <div class="col-xs-12 col-md-3">
-              <div class="med-diamond">
-                <h1 class="glyphicon glyphicon-phone"></h1>
-              </div>
-              <div class="about-col">
-                <h3>Responsive</h3>
-                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse libero, eum? Nostrum numquam temporibus ducimus quasi</p><span class="dash-about"></span>
-                <p class="more-link">Learn More</p>
+              <div class="col-xs-10 col-md-10 boxem-even">
+                <h4 class="lead-even">Test Title</h4>
+                <p class="sub-lead-even">Curabitur nulla odio bibendum sit amet facilisis sed lobotis itd justo. Done csec sollicitudin facilisis</p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!--Back to Top-->
-    <div class="top">
-      <div class="top-inner glyphicon glyphicon-menu-up"></div>
+  </div>
+  <div id="intro" class="intro-section top-buffer">
+    <div class="container-intro">
+      <h4>Let's build your next dream project</h4>
+      <p>We make our <span class="text-over">work look good</span> &#38; have experience in <br> the creation of brand identities for <span class="text-over">print &#38; web</span>, with a difference.</p>
+      <div class="btn-primary">View Case Studies</div>
     </div>
-    <!-- JQuery--><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Latest compiled and minified JavaScript--><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <!--Smooth Scroll-->
-    <script type="text/javascript">
-      $(function() {
-        $('a[href*=#]:not([href=#])').click(function() {
-          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-            if (target.length) {
-              $('html,body').animate({
-                scrollTop: target.offset().top
-              }, 1500);
-              return false;
-            }
-          }
-        });
-      });
-      $(document).ready(function() {
-          var offset = 400;
-          var duration = 500;
-          $(window).scroll(function() {
-              if ($(this).scrollTop() > offset) {
-                  $('.top').fadeIn(duration);
-              } else {
-                  $('.top').fadeOut(duration);
-              }
-          });
-          
-          $('.top').click(function(event) {
-              event.preventDefault();
-              $('html, body').animate({scrollTop: 0}, 1500);
-              return false;
-          })
-      });
-    </script>
-  </body>
-</html>
+  </div>
+  <div id="about" class="container">
+    <div class="row top-buffer">
+      <div class="col-xs-12 col-md-12">
+        <h1 class="text-center title">About G Dev Tech Work</h1>
+        <h4 class="text-center sub-title">- What we do for you -</h4>
+      </div>
+    </div>
+    <div class="row top-buffer">
+      <div class="col-xs-12 col-md-12">
+        <div class="row">
+          <div class="col-xs-12 col-md-3">
+            <div class="med-diamond">
+              <h1 class="glyphicon glyphicon-heart-empty"></h1>
+            </div>
+            <div class="about-col">
+              <h3>Achievements</h3>
+              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse libero, eum? Nostrum numquam temporibus ducimus quasi</p><span class="dash-about"></span>
+              <p class="more-link">Learn More</p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-3">
+            <div class="med-diamond">
+              <h1 class="glyphicon glyphicon-edit"></h1>
+            </div>
+            <div class="about-col">
+              <h3>Clean Design</h3>
+              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse libero, eum? Nostrum numquam temporibus ducimus quasi</p><span class="dash-about"></span>
+              <p class="more-link">Learn More</p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-3">
+            <div class="med-diamond">
+              <h1 class="glyphicon glyphicon-resize-full"></h1>
+            </div>
+            <div class="about-col">
+              <h3>Retina Ready</h3>
+              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse libero, eum? Nostrum numquam temporibus ducimus quasi</p><span class="dash-about"></span>
+              <p class="more-link">Learn More</p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-3">
+            <div class="med-diamond">
+              <h1 class="glyphicon glyphicon-phone"></h1>
+            </div>
+            <div class="about-col">
+              <h3>Responsive</h3>
+              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse libero, eum? Nostrum numquam temporibus ducimus quasi</p><span class="dash-about"></span>
+              <p class="more-link">Learn More</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Back to Top-->
+  <div class="top">
+    <div class="top-inner glyphicon glyphicon-menu-up"></div>
+  </div>
+  <!-- JQuery--><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Latest compiled and minified JavaScript--><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <!--Smooth Scroll-->
+  <script src="../assets/js/main.min.js"></script> 
+  </html>
+</body>
