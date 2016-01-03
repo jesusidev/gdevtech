@@ -40,12 +40,14 @@ section#about.container
 		.col-xs-12.col-md-6
 			.intro-video
 				h4.intro-title Introduction Video
+				.dash-about
 				.embed-responsive.embed-responsive-16by9
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/qQB2wtKQkvM" frameborder="0" allowfullscreen></iframe>
+					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/qQB2wtKQkvM" allowfullscreen></iframe>
 				p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore doloribus quidem sed, maxime numquam, excepturi velit eaque modi.
 		.col-xs-12.col-md-6
 			.skills
 				h4.skills-title Skills We Got
+				.dash-about
 				.skillbar.clearfix(data-percent="90%")
 					.skillbar-title
 						span Web Design
@@ -61,6 +63,12 @@ section#about.container
 				.skillbar.clearfix(data-percent="100%")
 					.skillbar-title
 						span HTML5
+					.skillbar-bar
+					.skill-bar-percent
+						span.count 100%
+				.skillbar.clearfix(data-percent="100%")
+					.skillbar-title
+						span CSS3
 					.skillbar-bar
 					.skill-bar-percent
 						span.count 100%

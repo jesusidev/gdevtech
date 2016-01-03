@@ -1,6 +1,7 @@
 /*===============================
 =            3 Modules          =
 ===============================*/
+@import url("_2basics/navbar.css");
 @import url("_3modules/animate.css");
 /*=============================================
 =            1 Tools                         =
@@ -80,7 +81,7 @@ left: 28px:hover {
 .navbar-brand>img {
   width: 65px;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .navbar-brand>img {
     margin-left: 10px;
   }
@@ -88,7 +89,7 @@ left: 28px:hover {
 .navbar-nav {
   float: right;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .navbar-nav {
     float: none;
   }
@@ -105,7 +106,7 @@ left: 28px:hover {
   border-bottom: 3px solid #fff;
   padding-bottom: 12px;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .nav>li>a {
     margin-left: 10px;
   }
@@ -159,9 +160,9 @@ header>p {
   color: #fff;
   z-index: 100;
 }
-@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+@media (max-width: 991px) {
   header>p {
-    width: 80%;
+    width: 35%;
   }
 }
 .glyphicon-circle-arrow-down:hover {
@@ -186,7 +187,7 @@ header>p {
   top: 34px;
   left: 34px;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .boxem-odd {
     left: 0px;
   }
@@ -196,7 +197,7 @@ header>p {
   top: 34px;
   left: -24px;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .boxem-even {
     left: 0px;
   }
@@ -213,7 +214,7 @@ header>p {
   font-weight: 700;
   text-align: right;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .lead-odd {
     text-align: center;
   }
@@ -222,7 +223,7 @@ header>p {
   font-weight: 700;
   text-align: left;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .lead-even {
     text-align: center;
   }
@@ -232,7 +233,7 @@ header>p {
   text-align: right;
   font-size: 12px;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .sub-lead-odd {
     text-align: center;
   }
@@ -242,7 +243,7 @@ header>p {
   text-align: left;
   font-size: 12px;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .sub-lead-even {
     text-align: center;
   }
@@ -264,7 +265,7 @@ header>p {
   -moz-box-shadow: 2px 2px 7px 1px #808080;
   box-shadow: 2px 2px 7px 1px #808080;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .small-diamond {
     left: -10px;
     width: 40px;
@@ -284,7 +285,7 @@ header>p {
   top: -3px;
   font-size: 27px;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .small-diamond>h1 {
     right: -10px;
     top: -10px;
@@ -308,7 +309,7 @@ header>p {
   -moz-box-shadow: 2px 2px 7px 1px #808080;
   box-shadow: 2px 2px 7px 1px #808080;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .small-diamond-even {
     left: 20px;
     width: 40px;
@@ -328,7 +329,7 @@ header>p {
   top: -3px;
   font-size: 27px;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .small-diamond-even>h1 {
     right: -10px;
     top: -10px;
@@ -347,7 +348,7 @@ header>p {
   left: 52px;
   top: 20px;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .dash {
     display: none;
   }
@@ -361,7 +362,7 @@ header>p {
   top: -85px;
   left: 70px;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .diamond-logo {
     display: none;
   }
@@ -376,7 +377,7 @@ header>p {
   border: 115px solid transparent;
   border-top-color: #0028d5;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .diamond-logo:after {
     display: none;
   }
@@ -388,7 +389,7 @@ header>p {
   left: -71px;
   height: 105px;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .diamond-logo>img {
     display: none;
   }
@@ -399,7 +400,7 @@ header>p {
   position: relative;
   top: -82px;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .nth-row {
     position: inherit;
     top: 0;
@@ -561,11 +562,17 @@ header>p {
 }
 .intro-title {
   text-transform: uppercase;
-  margin-bottom: 40px;
+}
+.intro-video>.dash-about {
+  width: 10%;
+  margin: 5px 0 30px 0;
+}
+.skills>.dash-about {
+  width: 10%;
+  margin: 5px 0 30px 0;
 }
 .skills-title {
   text-transform: uppercase;
-  margin-bottom: 40px;
 }
 .skillbar {
   position: relative;
