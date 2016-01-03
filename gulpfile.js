@@ -4,7 +4,6 @@ var gulp = require('gulp'),
 	stylus = require('gulp-stylus'),
 	jade = require('gulp-jade'),
 	concat = require('gulp-concat'),
-	minifyCss = require('gulp-minify-css'),
 	uglify = require('gulp-uglify'),
 	rename = require('gulp-rename'),
 	connect = require('gulp-connect');
