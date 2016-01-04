@@ -494,7 +494,7 @@ header>p {
     margin-top: 30px;
   }
 }
-.med-diamond {
+.lrg-diamond {
   width: 90px;
   height: 90px;
   display: block;
@@ -510,14 +510,14 @@ header>p {
   box-shadow: 2px 2px 7px 1px #808080;
 }
 @media (max-width: 767px) {
-  .med-diamond {
+  .lrg-diamond {
     left: -10px;
     width: 60px;
     height: 60px;
     top: 65px;
   }
 }
-.med-diamond>h1 {
+.lrg-diamond>h1 {
   color: #000;
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
@@ -530,14 +530,14 @@ header>p {
   font-size: 40px;
 }
 @media (max-width: 767px) {
-  .med-diamond>h1 {
+  .lrg-diamond>h1 {
     right: -18px;
     top: -4px;
     font-size: 30px;
   }
 }
 .about-col {
-  margin-top: 50px;
+  margin-top: 40px;
   text-align: center;
   overflow: hidden;
 }
@@ -640,4 +640,64 @@ header>p {
   height: 20px;
   line-height: 20px;
   color: #444;
+}
+.med-diamond {
+  width: 75px;
+  height: 75px;
+  display: block;
+  margin: 0 auto;
+  background-color: rgba(255,255,255,0.72);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-box-shadow: 2px 2px 7px 1px #808080;
+  -moz-box-shadow: 2px 2px 7px 1px #808080;
+  box-shadow: 2px 2px 7px 1px #808080;
+}
+@media (max-width: 767px) {
+  .med-diamond {
+    left: -10px;
+    width: 60px;
+    height: 60px;
+    top: 65px;
+  }
+}
+.med-diamond>h1 {
+  color: #000;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  position: relative;
+  right: -14px;
+  top: -6px;
+  font-size: 24px;
+}
+@media (max-width: 767px) {
+  .med-diamond>h1 {
+    right: -18px;
+    top: -4px;
+    font-size: 30px;
+  }
+}
+.med-diamond>h2 {
+  color: #000;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  position: relative;
+  right: -23px;
+  top: -54px;
+  font-size: 20px;
+}
+@media (max-width: 767px) {
+  .med-diamond>h2 {
+    right: -49px;
+    top: -33px;
+  }
 }
