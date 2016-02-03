@@ -20,9 +20,9 @@ gulp.task('styles', function(){
 // Concatenate & Minify JS
 gulp.task('scripts', function(){
 	return gulp.src('assets/js/functions.js')
-		.pipe(concat('main.js'))
+		.pipe(concat(['functions.js']))
 		.pipe(gulp.dest('assets/js'))
-		.pipe(rename('main.min.js'))
+		.pipe(rename('functions.min.js'))
 		.pipe(uglify())
 		.pipe(gulp.dest('assets/js'))
 });
@@ -61,7 +61,6 @@ gulp.task('watch', function(){
 gulp.task('connect', function(){
 	return connect.server({
 		//Update this to the current host 'localhost'
-		host: 'gdevtech.local',
 		port: 6565,
 		livereload: true
 	});
@@ -69,6 +68,3 @@ gulp.task('connect', function(){
 
 // Default Task
 gulp.task('default', ['styles', 'scripts', 'templates', 'watch', 'connect']);
-
-// Watch and Connect task only
-gulp.task('startup', ['watch', 'connect']);

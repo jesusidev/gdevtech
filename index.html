@@ -36,19 +36,16 @@
   <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon/favicon-16x16.png">
   <link rel="manifest" href="./assets/img/favicon/manifest.json">
   <!-- Latest compiled and minified CSS-->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <!-- CSS Customization-->
   <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
   <header>
     <h1>G Dev Tech</h1>
-    <h4>Focusing on Design &#38; Technology</h4>
-    <object>
-      <embed src="assets/img/logo.png" alt="G Dev Tech Logo">
-    </object>
+    <h4>Focusing on Design &#38; Technology</h4><img src="assets/img/logo.png" alt="G Dev Tech Logo">
     <h2>We Know It Works</h2>
-    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis illo quis suscipit...</p><a href="#nav" class="glyphicon glyphicon-circle-arrow-down animated bounceInUp"></a>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis illo quis suscipit...</p><a href="#nav" class="arrow-circle glyphicon glyphicon-circle-arrow-down animated bounceInUp"></a>
   </header>
   <nav id="nav" class="navbar-wrapper">
     <div class="row">
@@ -62,7 +59,7 @@
               <li><a href="#home">HOME</a></li>
               <li><a href="#intro">INTRO</a></li>
               <li><a href="#about">ABOUT</a></li>
-              <li><a href="#">SERVICES</a></li>
+              <li><a href="#services">SERVICES</a></li>
               <li><a href="#">TEAM</a></li>
               <li><a href="#">HISTORY</a></li>
               <li><a href="#">WORKS</a></li>
@@ -157,7 +154,7 @@
   <section id="about" class="container">
     <div class="row top-buffer">
       <div class="col-xs-12 col-md-12">
-        <h1 class="text-center title">About G Dev Tech Work</h1>
+        <h1 class="text-center title">What we do</h1>
         <h4 class="text-center sub-title">- What we do for you -</h4>
       </div>
     </div>
@@ -214,7 +211,7 @@
       </div>
       <div class="col-xs-12 col-md-6">
         <div class="skills">
-          <h4 class="skills-title">Skills We Got</h4>
+          <h4 class="skills-title">Our Skills</h4>
           <div class="dash-about"></div>
           <div data-percent="90%" class="skillbar clearfix">
             <div class="skillbar-title"><span>Web Design</span></div>
@@ -253,47 +250,118 @@
       <div class="col-xs-6 col-md-3">
         <div class="med-diamond">
           <h1 class="glyphicon glyphicon-export"></h1>
-          <h2>167</h2>
+          <h2 class="count-diamond">87</h2>
         </div>
         <div class="about-col">
-          <h4>Projects Lanuched</h4>
+          <h4>Clients</h4>
         </div>
       </div>
       <div class="col-xs-6 col-md-3">
         <div class="med-diamond">
           <h1 class="glyphicon glyphicon-king"></h1>
-          <h2>25</h2>
+          <h2 class="count-diamond">25</h2>
         </div>
         <div class="about-col">
-          <h4>Awards Won</h4>
+          <h4>Awards</h4>
         </div>
       </div>
       <div class="col-xs-6 col-md-3">
         <div class="med-diamond">
           <h1 class="glyphicon glyphicon-send"></h1>
-          <h2>98</h2>
+          <h2 class="count-diamond">68</h2>
         </div>
         <div class="about-col">
-          <h4>Proposals Sent</h4>
+          <h4>Projects</h4>
         </div>
       </div>
       <div class="col-xs-6 col-md-3">
         <div class="med-diamond">
           <h1 class="glyphicon glyphicon-wrench"></h1>
-          <h2>856</h2>
+          <h2 class="count-diamond">46</h2>
         </div>
         <div class="about-col">
-          <h4>Hours of Work</h4>
+          <h4>Proposals</h4>
         </div>
       </div>
     </div>
   </section>
+  <section id="services" class="container">
+    <div class="row top-buffer">
+      <div class="col-xs-12 col-md-12">
+        <h1 class="text-center title">Services We Offer</h1>
+        <h4 class="text-center sub-title">- Read more about what we offer -</h4>
+      </div>
+    </div>
+  </section>
+  <div class="sliderbox top-buffer">
+    <div class="container">
+      <div class="col-xs-12 col-md-12 desk-mode">
+        <ul id="myTabs" role="tablist" class="nav nav-tabs">
+          <li role="presentation" class="active"><a aria-controls="video" aria-expanded="true" data-toggle="tab" href="#video" id="video-tab" role="tab">Video Production</a></li>
+          <li role="presentation"><a aria-controls="photo" aria-expanded="false" data-toggle="tab" href="#photo" id="photo-tab" role="tab">Photography</a></li>
+          <li role="presentation"><a aria-controls="web" aria-expanded="false" data-toggle="tab" href="#web" id="web-tab" role="tab">Web Design & Development</a></li>
+          <li role="presentation"><a aria-controls="app" aria-expanded="false" data-toggle="tab" href="#app" id="app-tab" role="tab">Applications</a></li>
+          <li role="presentation"><a aria-controls="social" aria-expanded="false" data-toggle="tab" href="#social" id="social-tab" role="tab">Social Media</a></li>
+        </ul>
+        <div id="myTabContent" class="tab-content">
+          <div aria-labelledby="video-tab" id="video" role="tabpanel" class="tab-pane fade active in">
+            <div class="col-xs-12 col-md-6">
+              <h2>Video Production</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis a necessitatibus, aut accusamus. Cum adipisci ullam alias enim culpa, quae deleniti placeat provident, ipsum error officiis! Debitis cumque quae id.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis a necessitatibus, aut accusamus. Cum adipisci ullam alias enim culpa, quae deleniti placeat provident, ipsum error officiis! Debitis cumque quae id.</p><span class="dash-serv"></span>
+              <p class="more-link">Learn More</p>
+            </div>
+            <div class="col-xs-12 col-md-6"><img src="../assets/img/services/vid-pro.png" alt="Services Video Production Image" width="350px" height="250px"></div>
+          </div>
+          <div aria-labelledby="photo-tab" id="photo" role="tabpanel" class="tab-pane fade">
+            <div class="col-xs-12 col-md-6">
+              <h2>Photography</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis a necessitatibus, aut accusamus. Cum adipisci ullam alias enim culpa, quae deleniti placeat provident, ipsum error officiis! Debitis cumque quae id.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis a necessitatibus, aut accusamus. Cum adipisci ullam alias enim culpa, quae deleniti placeat provident, ipsum error officiis! Debitis cumque quae id.</p><span class="dash-serv"></span>
+              <p class="more-link">Learn More</p>
+            </div>
+            <div class="col-xs-12 col-md-6"><img src="../assets/img/services/photo.jpg" alt="Services Photography Image" width="350px" height="250px"></div>
+          </div>
+          <div aria-labelledby="web-tab" id="web" role="tabpanel" class="tab-pane fade">
+            <div class="col-xs-12 col-md-6">
+              <h2>Web Design & Development</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis a necessitatibus, aut accusamus. Cum adipisci ullam alias enim culpa, quae deleniti placeat provident, ipsum error officiis! Debitis cumque quae id.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis a necessitatibus, aut accusamus. Cum adipisci ullam alias enim culpa, quae deleniti placeat provident, ipsum error officiis! Debitis cumque quae id.</p><span class="dash-serv"></span>
+              <p class="more-link">Learn More</p>
+            </div>
+            <div class="col-xs-12 col-md-6"><img src="../assets/img/services/website-development.png" alt="Services Web Design and Development Image" width="350px" height="250px"></div>
+          </div>
+          <div aria-labelledby="app-tab" id="app" role="tabpanel" class="tab-pane fade">
+            <div class="col-xs-12 col-md-6">
+              <h2>Web Applications</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis a necessitatibus, aut accusamus. Cum adipisci ullam alias enim culpa, quae deleniti placeat provident, ipsum error officiis! Debitis cumque quae id.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis a necessitatibus, aut accusamus. Cum adipisci ullam alias enim culpa, quae deleniti placeat provident, ipsum error officiis! Debitis cumque quae id.</p><span class="dash-serv"></span>
+              <p class="more-link">Learn More</p>
+            </div>
+            <div class="col-xs-12 col-md-6"><img src="../assets/img/services/webapp.png" alt="Services Web Applications Image" width="350px" height="250px"></div>
+          </div>
+          <div aria-labelledby="social-tab" id="social" role="tabpanel" class="tab-pane fade">
+            <div class="col-xs-12 col-md-6">
+              <h2>Social Media</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis a necessitatibus, aut accusamus. Cum adipisci ullam alias enim culpa, quae deleniti placeat provident, ipsum error officiis! Debitis cumque quae id.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis a necessitatibus, aut accusamus. Cum adipisci ullam alias enim culpa, quae deleniti placeat provident, ipsum error officiis! Debitis cumque quae id.</p><span class="dash-serv"></span>
+              <p class="more-link">Learn More</p>
+            </div>
+            <div class="col-xs-12 col-md-6"><img src="../assets/img/services/social-media.png" alt="Services Social Media Image" width="350px" height="250px"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-12 mob-mode">
+        <h2>TESTING</h2>
+      </div>
+    </div>
+  </div>
   <!--Back to Top-->
   <div class="top">
     <div class="top-inner glyphicon glyphicon-menu-up"></div>
   </div>
   <!-- JQuery--><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <!-- Latest compiled and minified JavaScript--><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <!-- Latest compiled and minified JavaScript--><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <!--Smooth Scroll-->
   <script src="../assets/js/main.min.js"></script> 
   </html>

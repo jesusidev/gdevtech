@@ -1,0 +1,707 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"text",
+				"text-align-last	styl"
+			],
+			[
+				"backgo",
+				"background-color	styl"
+			],
+			[
+				"back",
+				"background-color	styl"
+			],
+			[
+				"da",
+				"data-percent"
+			],
+			[
+				"navbar",
+				"navbar-static-top"
+			],
+			[
+				"add",
+				"addClass	.addClass()"
+			],
+			[
+				"off",
+				"offset	.offset()"
+			],
+			[
+				"comm",
+				"comm	Comment - Single-line block comment"
+			],
+			[
+				"co",
+				"comm-block	Comment - Block style comment"
+			],
+			[
+				"pos",
+				"position	styl"
+			],
+			[
+				"margin",
+				"margin-top	styl"
+			],
+			[
+				"backgr",
+				"background-color	styl"
+			],
+			[
+				"po",
+				"position	styl"
+			],
+			[
+				"bac",
+				"background-color	styl"
+			],
+			[
+				"colo",
+				"color	styl"
+			],
+			[
+				"font",
+				"font-weight	styl"
+			],
+			[
+				"transition",
+				"transition-duration	styl"
+			],
+			[
+				"tran",
+				"transition-property	styl"
+			],
+			[
+				"padding",
+				"padding-left	styl"
+			],
+			[
+				"paddin",
+				"padding-top	styl"
+			],
+			[
+				"border",
+				"border-bottom	styl"
+			],
+			[
+				"color",
+				"background-color	styl"
+			],
+			[
+				"nav",
+				"navbar-brand"
+			],
+			[
+				"cont",
+				"controller	AngularJS"
+			],
+			[
+				"comm-se",
+				"comm-section-header	Comment - Section header comment"
+			],
+			[
+				"fon",
+				"font-family"
+			],
+			[
+				"red",
+				"ready	jQuery(document).ready"
+			],
+			[
+				"fir",
+				"firstName"
+			],
+			[
+				"fi",
+				"firstName"
+			],
+			[
+				"c",
+				"css/"
+			],
+			[
+				"a",
+				"assets/"
+			],
+			[
+				"fone",
+				"font-size"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"marg",
+				"margin-right"
+			],
+			[
+				"backg",
+				"background-color"
+			],
+			[
+				"l",
+				"loader.js"
+			],
+			[
+				"m",
+				"main.css"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 342.0,
+		"last_filter": "sql",
+		"selected_items":
+		[
+			[
+				"sql",
+				"Set Syntax: SQL"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"vm",
+				"View: Toggle Menu"
+			],
+			[
+				"htm",
+				"Set Syntax: HTML"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"j",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"gulp",
+				"Gulp: List plugins"
+			],
+			[
+				"gu",
+				"Gulp: Hide panel"
+			],
+			[
+				"gul",
+				"Gulp: Hide panel"
+			],
+			[
+				"th",
+				"Themr: List themes"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"them",
+				"Themr: List themes"
+			],
+			[
+				"st",
+				"Set Syntax: Stylus"
+			],
+			[
+				"jade",
+				"Set Syntax: Jade"
+			],
+			[
+				"xml",
+				"Set Syntax: XML"
+			],
+			[
+				"jav",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"sty",
+				"Set Syntax: Stylus"
+			],
+			[
+				"java",
+				"Set Syntax: Java"
+			],
+			[
+				"ja",
+				"Set Syntax: Java"
+			],
+			[
+				"jq",
+				"Snippet: jQuery(document).ready"
+			],
+			[
+				"sa",
+				"Set Syntax: Sass"
+			],
+			[
+				"h",
+				"Set Syntax: HTML"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"xm",
+				"Set Syntax: XML"
+			],
+			[
+				"ht",
+				"Set Syntax: HTML"
+			],
+			[
+				"sass",
+				"Set Syntax: Sass"
+			],
+			[
+				"the",
+				"Themr: List themes"
+			]
+		],
+		"width": 494.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/vguzmje/Downloads/20160202000910pslog.txt",
+		"/C/Users/vguzmje/Downloads/psj-runtime.log",
+		"/C/Users/vguzmje/AppData/Local/Temp/fz3temp-1/main.min.js",
+		"/C/Users/vguzmje/Downloads/standard_import.txt",
+		"/C/Users/vguzmje/Downloads/standard_export.txt",
+		"/C/Users/vguzmje/Desktop/tsz.nfo",
+		"/C/Users/vguzmje/Downloads/Sakila-Db/sakila-db/sakila-schema.sql",
+		"/C/Users/vguzmje/Documents/Development/gdevtech/views/layout/services.jade",
+		"/C/Users/vguzmje/Documents/Development/gdevtech/gulpfile.js",
+		"/C/Users/vguzmje/Documents/Development/gdevtech/assets/js/functions.js",
+		"/C/Users/vguzmje/Documents/Development/gdevtech/assets/css/_4pages/_services.styl",
+		"/C/Users/vguzmje/Documents/Development/gdevtech/stuff.html",
+		"/C/Users/vguzmje/Downloads/standard_grade_section_export.txt",
+		"/C/Users/vguzmje/Downloads/PowerSchool Runtime Log 1-21-16",
+		"/C/Users/vguzmje/Downloads/dalx.log",
+		"/C/Users/vguzmje/AppData/Local/Temp/Temp1_Gen1v441buildEE293Bupdatefromv3101packageRev2.zip/install.lst",
+		"/E/SyncMyRide/Sync_5M3U01KX_3FAHP0JG0AR361388.xml",
+		"/C/Users/vguzmje/AppData/Local/Temp/Mobirise-P1XkOA/20160114_154959/assets/jarallax/jarallax.js",
+		"/C/Users/vguzmje/Downloads/staffpic.txt",
+		"/C/Users/vguzmje/Downloads/CA_Transcripts.rpt",
+		"/C/Users/vguzmje/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/vguzmje/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/vguzmje/Documents/Development/gdevtech/assets/css/_4pages/_about.styl",
+		"/C/Users/vguzmje/Documents/Development/gdevtech/views/layout/about.jade",
+		"/C/Users/vguzmje/Documents/Development/gdevtech/assets/css/_2basics/_btns.styl",
+		"/E/time.TXT",
+		"/C/Users/vguzmje/Documents/Development/gdevtech/gdevtech.sublime-project",
+		"/C/Users/vguzmje/Documents/Development/gdevtech/.gitignore",
+		"/C/Users/vguzmje/Downloads/15990147_547964796.tcx",
+		"/C/Users/vguzmje/Desktop/program.txt",
+		"/C/Users/vguzmje/Downloads/psj-runtime-2016-01-06-1.log",
+		"/C/Users/vguzmje/Downloads/servlet.FileDownload.txt",
+		"/c/Users/vguzmje/Documents/Development/gdevtech/views/layout/header.jade",
+		"/c/Users/vguzmje/Documents/Development/gdevtech/assets/css/_4pages/_home.styl",
+		"/c/Users/vguzmje/Documents/Development/gdevtech/views/partials/foot.jade",
+		"/c/Users/vguzmje/Documents/Development/gdevtech/views/partials/head.jade",
+		"/c/Users/vguzmje/Documents/Development/gdevtech/assets/css/main.styl",
+		"/c/Users/vguzmje/Documents/Development/gdevtech/assets/js/functions.js",
+		"/c/Users/vguzmje/Documents/Development/gdevtech/views/index.jade",
+		"/c/Users/vguzmje/Documents/Development/gdevtech/views/layout/navigation.jade",
+		"/c/Users/vguzmje/Documents/Development/gdevtech/views/layout/about.jade",
+		"/C/Users/vguzmje/Documents/Development/gdevtech/views/partials/head.jade",
+		"/C/Users/vguzmje/Documents/Development/gdevtech/assets/css/main.styl",
+		"/C/Users/vguzmje/Documents/Development/gdevtech/assets/css/_3modules/font-awesome.css",
+		"/C/Users/vguzmje/AppData/Local/Temp/Temp1_font-awesome-4.5.0.zip/font-awesome-4.5.0/css/font-awesome.css",
+		"/C/Users/vguzmje/Documents/Development/gdevtech/views/layout/home.jade",
+		"/C/Users/vguzmje/Documents/Development/gdevtech/assets/css/_2basics/_nav.styl",
+		"/C/Users/vguzmje/Documents/Development/gdevtech/assets/css/_4pages/_home.styl",
+		"/C/Users/vguzmje/Documents/Development/gdevtech/assets/css/_2basics/navbar.css",
+		"/C/Users/vguzmje/Documents/Development/gdevtech/assets/css/_2basics/_body-ele.styl",
+		"/C/Users/vguzmje/Documents/Development/gdevtech/views/layout/header.jade",
+		"/C/Users/vguzmje/Documents/Development/gdevtech/index.html",
+		"/C/Users/vguzmje/Documents/Development/gdevtech/views/partials/foot.jade",
+		"/C/Users/vguzmje/Downloads/bootstrap.min.css",
+		"/C/Users/vguzmje/Documents/Development/gdevtech/assets/css/_3modules/bootstrap.min.css",
+		"/C/Users/vguzmje/AppData/Local/Temp/Temp1_bootstrap-3.3.6-dist.zip/bootstrap-3.3.6-dist/css/bootstrap.css",
+		"/C/Users/vguzmje/AppData/Local/Temp/Temp1_bootstrap-3.3.6-dist.zip/bootstrap-3.3.6-dist/css/bootstrap.min.css",
+		"/c/Users/vguzmje/Documents/Development/gdevtech/views/layout/home.jade",
+		"/c/Users/vguzmje/Documents/Development/gdevtech/views/layout/intro.jade",
+		"/c/Users/vguzmje/Documents/Development/gdevtech/gulpfile.js",
+		"/c/Users/vguzmje/Documents/Development/gdevtech/assets/js/main.js",
+		"/c/Users/vguzmje/Documents/Development/gdevtech/assets/css/main.css",
+		"/c/Users/vguzmje/Documents/Development/gdevtech/assets/css/_2basics/_btns.styl",
+		"/c/Users/vguzmje/Documents/Development/gdevtech/assets/css/_1tools/_vars.styl",
+		"/c/Users/vguzmje/Documents/Development/gdevtech/assets/css/_4pages/_about.styl",
+		"/c/Users/vguzmje/Documents/Development/gdevtech/assets/js/main.min.js",
+		"/c/Users/vguzmje/Documents/Development/gdevtech/assets/css/_4pages/_intro.styl",
+		"/C/Users/vguzmje/Documents/Development/gdevtech/sftp-config.json",
+		"/C/Users/vguzmje/Documents/Development/gdevtech/views/layout/intro.jade",
+		"/C/Users/vguzmje/Documents/Development/gdevtech/assets/css/_4pages/_intro.styl",
+		"/C/Users/vguzmje/Documents/Development/gdevtech/views/index.jade",
+		"/C/Users/vguzmje/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
+		"/c/Users/vguzmje/Documents/Development/gdevtech/assets/css/_1tools/_fonts.styl",
+		"/c/Users/vguzmje/Documents/Development/gdevtech/assets/css/_2basics/_body-ele.styl",
+		"/c/Users/vguzmje/Documents/Development/gdevtech/README.md",
+		"/c/Users/vguzmje/Documents/Development/gdevtech/assets/css/_2basics/_selection-colors.styl",
+		"/c/Users/vguzmje/Documents/Development/gdevtech/views/layout/full-width.jade",
+		"/c/Users/vguzmje/Documents/Development/gdevtech/assets/img/logo.svg",
+		"/C/Users/vguzmje/Documents/Development/gdevtech/assets/css/_1tools/_fonts.styl",
+		"/C/Users/vguzmje/Documents/Development/gdevtech/assets/css/_1tools/_vars.styl",
+		"/C/Users/vguzmje/Documents/Development/gdevtech/views/layout/navigation.jade",
+		"/C/Users/vguzmje/Documents/Development/gdevtech/assets/css/main.css",
+		"/c/Users/vguzmje/Documents/Development/gdevtech/assets/css/_3modules/font-awesome.css",
+		"/C/Users/vguzmje/AppData/Local/Temp/Temp1_font-awesome-4.5.0.zip/font-awesome-4.5.0/css/font-awesome.min.css",
+		"/C/Users/vguzmje/AppData/Local/Temp/Temp1_font-awesome-4.5.0.zip/font-awesome-4.5.0/HELP-US-OUT.txt",
+		"/C/Users/vguzmje/AppData/Local/Sublime Text 3/Index/000084.ldb",
+		"/C/Users/vguzmje/Documents/Development/gdevtech/views/partials/html-head.jade",
+		"/c/Users/vguzmje/Documents/Development/gdevtech/assets/css/_2basics/_nav.styl",
+		"/c/Users/vguzmje/Documents/Development/gdevtech/index.html",
+		"/C/Users/vguzmje/Documents/Development/javascript/index.html",
+		"/c/Users/vguzmje/Documents/Development/gdevtech/views/partials/html-head.jade",
+		"/C/Users/vguzmje/Downloads/KEY0019644122201524546PMONSIS_OCTSEC1_20151031_941883.xml.OUT",
+		"/C/Users/vguzmje/Documents/Development/gdevtech/gruntfile.js",
+		"/C/Users/vguzmje/Documents/Development/gdevtech/package.json",
+		"/C/Users/vguzmje/Documents/Development/gdevtech/LICENSE.md",
+		"/C/Users/vguzmje/Documents/Development/gdevtech/README.md",
+		"/c/Users/vguzmje/Documents/Development/gdevtech/package.json",
+		"/C/Users/vguzmje/AppData/Local/Temp/fz3temp-1/main.css",
+		"/C/Users/vguzmje/AppData/Local/Temp/fz3temp-1/lib.js",
+		"/C/Users/vguzmje/AppData/Local/Temp/fz3temp-1/temp.js",
+		"/C/Users/vguzmje/AppData/Local/Temp/fz3temp-1/index.html",
+		"/C/Users/vguzmje/Documents/Development/gdevtech/assets/js/aja.js",
+		"/C/Users/vguzmje/Documents/Development/gdevtech/assets/js/typed.js",
+		"/C/Users/vguzmje/Documents/Development/gdevtech/assets/js/ifvisible.js",
+		"/C/Users/vguzmje/Desktop/psjlog.txt",
+		"/C/Users/vguzmje/Documents/Development/My-List/My-List.css",
+		"/C/Users/vguzmje/Documents/Development/My-List/My-List.html",
+		"/C/Users/vguzmje/Documents/Development/My-List/My-List.js",
+		"/C/Users/vguzmje/Documents/Development/My-List/.meteor/packages",
+		"/C/Users/vguzmje/Downloads/simple-todos-angular-6fb657fa7f9189200a1725c8b8d9e261fc65dba0/simple-todos-angular-6fb657fa7f9189200a1725c8b8d9e261fc65dba0/README.md",
+		"/C/Users/vguzmje/Documents/Development/simple-todos/server/lib.js",
+		"/C/Users/vguzmje/Documents/Development/navigation/assets/css/_1tools/_vars.styl",
+		"/C/Users/vguzmje/Documents/Development/navigation/assets/css/main.css",
+		"/C/Users/vguzmje/Documents/Development/navigation/assets/css/_4pages/_home.styl",
+		"/C/Users/vguzmje/Documents/Development/navigation/assets/css/main.styl",
+		"/C/Users/vguzmje/Documents/Development/navigation/index.html",
+		"/C/Users/vguzmje/Documents/Development/navigation/index.jade",
+		"/C/Users/vguzmje/Documents/Development/navigation/head.jade",
+		"/C/Users/vguzmje/Documents/Development/navigation/foot.jade",
+		"/C/Users/vguzmje/Documents/Development/navigation/assets/head.jade",
+		"/C/Users/vguzmje/Documents/Development/navigation/assets/js/functions.js",
+		"/C/Users/vguzmje/Documents/email.txt",
+		"/c/Users/vguzmje/Documents/email.txt",
+		"/c/Users/vguzmje/Documents/Development/navigation/.gitignore",
+		"/c/Users/vguzmje/Documents/Development/navigation/README.md",
+		"/C/Users/vguzmje/Downloads/S_SC_STU_ADDONWTGS_C_Export.txt",
+		"/C/Users/vguzmje/Documents/Development/simple-todos/client/temp.js",
+		"/C/Users/vguzmje/Documents/Development/simple-todos/index.html"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 92.0,
+		"where_history":
+		[
+			"C:\\Users\\vguzmje\\Documents\\Development",
+			"<project>",
+			"C:\\Users\\vguzmje\\Documents\\Development\\simple-todos\\.meteor\\local\\build\\programs\\server"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"70955",
+			"â€",
+			"â€™",
+			"PowerSchool",
+			";",
+			"sakila",
+			"Percent Calc No AV",
+			"	Percent Calc No AV",
+			"&GPA_sum((GPA_Percent())*GPA_potentialcredit())&",
+			"\"&GPA_sum((GPA_Percent())*GPA_potentialcredit())&\"",
+			"RepoSchemaUpdate_DBA_UTIL_15",
+			";",
+			".med-diamond-serv",
+			"photo",
+			"color",
+			"profile",
+			"Profile",
+			"profile",
+			"home",
+			"Home",
+			"home",
+			"videoProduction",
+			"com.pearson.pss.configuration.tomcat.StartTomcatServiceTask",
+			"Service Control",
+			"Service Control start command failed",
+			"ora-",
+			"down-arrow",
+			"}",
+			";",
+			"{",
+			"btn btn-primary",
+			"btn-lg",
+			"a(href=\"#\")",
+			"Home",
+			"ORA-",
+			"ui-jqgrid-bdiv",
+			", class=\"active\"",
+			"h3",
+			".lrg",
+			"h1",
+			".med",
+			"}",
+			";",
+			"{",
+			"(max-width: 767px) and",
+			"}",
+			";",
+			"{",
+			"}",
+			";",
+			"{",
+			"jQuery",
+			";",
+			"vitae nam labore est eius omnis veritatis harum, ex expedita laborum delectus, laudantium minus!",
+			"4",
+			"small",
+			"767",
+			"ctrl+l",
+			"win",
+			"1px",
+			";",
+			".text-right",
+			"color",
+			"15px",
+			";",
+			"$white",
+			"ORA",
+			"draker",
+			"SSO",
+			"LegacyPageResult",
+			"include",
+			"/",
+			"icon\"",
+			">",
+			"<link",
+			":",
+			"n",
+			"span.icon-bar",
+			"var",
+			"principa",
+			"ORA",
+			"Student Daily Attendance Report",
+			"dis",
+			"BilingualStatus",
+			"MA_BilingualStatus",
+			"DC",
+			"Name:",
+			":",
+			"group",
+			"mark",
+			"print",
+			"6985",
+			"3000",
+			"\\n",
+			"PSSR-24380 failed",
+			"susanmbaber@yahoo.com",
+			"ORA-",
+			"ORA0-",
+			"ORA",
+			"heaDER",
+			"ul",
+			"fieldStuNum",
+			"ui-datepicker-trigger",
+			"ui-datepicker",
+			"shopify",
+			"Home School",
+			"ET-5294-DDL",
+			"Startup2",
+			"ORA",
+			"RMAN",
+			"ORA",
+			"pluton",
+			"ORA",
+			"Gender",
+			"gender",
+			"ORA-00018",
+			"ORA",
+			"^",
+			"lsfont",
+			"Password"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"",
+			"~",
+			"gdev&1216"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 29.0
+	},
+	"input":
+	{
+		"height": 24.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.gulp_output":
+	{
+		"height": 144.0
+	},
+	"output.sftp":
+	{
+		"height": 134.0
+	},
+	"pinned_build_system": "",
+	"project": "gdevtech.sublime-project",
+	"replace":
+	{
+		"height": 54.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"untitled"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\Users\\vguzmje\\Documents\\Development\\gdevtech\\gdevtech.sublime-project"
+			],
+			[
+				"gde",
+				"C:\\Users\\vguzmje\\Documents\\Development\\gdevtech\\gdevtech.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 193.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
