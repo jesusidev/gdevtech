@@ -64,4 +64,22 @@ section#services.container
 					.col-xs-12.col-md-6
 						img(src="../assets/img/services/social-media.png", alt="Services Social Media Image", width="350px", height="250px")
 		.col-xs-12.col-md-12.mob-mode
-			h2 TESTING
+			div(class="panel-group", id="accordion", role="tablist", aria-multiselectable="true")
+				div(class="panel panel-default")
+					div(class="panel-heading", role="tab", id="headingOne")
+						h4.panel-title
+							a(role="button", data-toggle="collapse", data-parent="#accordion", href="#vidpro", aria-expanded="true", aria-controls="vidpro") Video Production
+								.panel-diamond
+									h1.glyphicon.glyphicon-export
+					div(id="vidpro", class="panel-collapse collapse in", role="tabpanel", aria-labelledby="headingOne")
+						div.panel-body
+							p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium enim, aut voluptatum beatae quam laborum quis optio amet, veritatis quaerat animi natus sunt, debitis libero! Aut fuga eos accusamus eum?
+				div(class="panel panel-default")
+					div(class="panel-heading", role="tab", id="headingTwo")
+						h4.panel-title
+							a(class="collapsed", role="button", data-toggle="collapse", data-parent="#accordion", href="#photo", aria-expanded="false", aria-controls="photo") Photography
+								.panel-diamond
+									h1.glyphicon.glyphicon-export
+					div(id="photo", class="panel-collapse collapse", role="tabpanel", aria-labelledby="headingTwo")
+						div.panel-body
+							p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium enim, aut voluptatum beatae quam laborum quis optio amet, veritatis quaerat animi natus sunt, debitis libero! Aut fuga eos accusamus eum?

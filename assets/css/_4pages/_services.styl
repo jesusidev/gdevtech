@@ -49,3 +49,42 @@
 	margin: 35px auto 25px 0
 	border-bottom: 2px solid #cacaca
 	width: 50px
+.panel-group
+	margin-top: 20px
+.panel-title
+	padding: 10px 15px 65px 15px
+	text-align: center
+	padding-left: 55px
+	a
+		text-decoration: none
+		&:hover
+			color: $main-color
+			text-decoration: none
+.panel-diamond
+	width: 55px
+	height: 55px
+	background-color: rgba(255, 255, 255, 0.72)
+	float: right
+	position: relative
+	top: 45px
+	left: 57px
+	transform(rotate(45deg))
+	box-shadow(2px 2px 7px 1px grey)
+	@media (max-width: 991px)
+		left: -150px
+		width: 40px
+		height: 40px
+		top: 30px
+	h1
+		color: black
+		transform(rotate(-45deg))
+		position: relative
+		right: -17px
+		top: -3px
+		font-size: 27px
+		&:hover
+			color: $main-color
+		@media (max-width: 991px)
+			right: -2px
+			top: -10px
+			font-size: 22px

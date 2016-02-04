@@ -19,8 +19,8 @@ gulp.task('styles', function(){
 
 // Concatenate & Minify JS
 gulp.task('scripts', function(){
-	return gulp.src('assets/js/functions.js')
-		.pipe(concat(['functions.js']))
+	return gulp.src(['assets/js/functions.js'])
+		.pipe(concat('functions.js'))
 		.pipe(gulp.dest('assets/js'))
 		.pipe(rename('functions.min.js'))
 		.pipe(uglify())
