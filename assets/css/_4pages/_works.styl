@@ -1,0 +1,63 @@
+.works-section
+	height: 350px
+	background-image: url('../img/works/worksbg.jpg')
+	background-size: cover
+	position: relative
+	color: white
+	background-position-y: -175px;
+	overflow: hidden
+	&:before
+		position: absolute
+		content:" "
+		top:0
+		left:0
+		width:100%
+		height: 100%
+		display: block
+		z-index:0
+		background-color: rgba(0, 0, 0, 0.70)
+	@media (max-width: 767px)
+		background-size: 800px 555px
+		background-position-y: -30px
+.works-section h1
+	margin: 0
+	position: absolute
+	top: 35%
+	left: 50%
+	margin-right: -50%
+	transform(translate(-50%, -50%))
+.works-section p
+	margin: 0
+	position: absolute
+	top: 50%
+	left: 50%
+	margin-right: -50%
+	transform(translate(-50%, -50%))
+.works-section .btn-primary
+	margin: 0
+	position: absolute
+	background-color: $main-color
+	padding: 15px 35px
+	text-transform: uppercase
+	cursor: pointer
+	top: 75%
+	left: 50%
+	margin-right: -50%
+	transform(translate(-50%, -50%))
+.container-works
+	width: 70%
+	text-align: center
+	@media (max-width: 767px)
+		width: 90%
+.container-works>h4
+	text-transform: uppercase
+	font-size: 18px
+	word-spacing: 2px
+	letter-spacing: 1px
+	@media (max-width: 767px)
+		font-size: 13px
+.container-works>p
+	font-size: 2em
+	@media (max-width: 767px)
+		font-size: 20px
+		margin-top: 30px

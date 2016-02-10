@@ -5,6 +5,7 @@ section#services.container
 			h4.text-center.sub-title - Read more about what we offer -
 .sliderbox.top-buffer
 	.container
+		// Desktop Mode
 		.col-xs-12.col-md-12.desk-mode
 			ul(class="nav nav-tabs", id="myTabs", role="tablist")
 				li(class="active", role="presentation")
@@ -26,7 +27,7 @@ section#services.container
 						span.dash-serv
 						p.more-link Learn More
 					.col-xs-12.col-md-6
-						img(src="../assets/img/services/vid-pro.png", alt="Services Video Production Image", width="350px", height="250px")
+						img(src="../assets/img/services/vid-pro.png", class="img-responsive", alt="Services Video Production Image")
 				div(aria-labelledby="photo-tab", class="tab-pane fade", id="photo", role="tabpanel")
 					.col-xs-12.col-md-6
 						h2 Photography
@@ -35,7 +36,7 @@ section#services.container
 						span.dash-serv
 						p.more-link Learn More
 					.col-xs-12.col-md-6
-						img(src="../assets/img/services/photo.jpg", alt="Services Photography Image", width="350px", height="250px")
+						img(src="../assets/img/services/photo.jpg", class="img-responsive", alt="Services Photography Image")
 				div(aria-labelledby="web-tab", class="tab-pane fade", id="web", role="tabpanel")
 					.col-xs-12.col-md-6
 						h2 Web Design & Development
@@ -44,7 +45,7 @@ section#services.container
 						span.dash-serv
 						p.more-link Learn More
 					.col-xs-12.col-md-6
-						img(src="../assets/img/services/website-development.png", alt="Services Web Design and Development Image", width="350px", height="250px")
+						img(src="../assets/img/services/website-development.png", class="img-responsive", alt="Services Web Design and Development Image")
 				div(aria-labelledby="app-tab", class="tab-pane fade", id="app", role="tabpanel")
 					.col-xs-12.col-md-6
 						h2 Web Applications
@@ -53,7 +54,7 @@ section#services.container
 						span.dash-serv
 						p.more-link Learn More
 					.col-xs-12.col-md-6
-						img(src="../assets/img/services/webapp.png", alt="Services Web Applications Image", width="350px", height="250px")
+						img(src="../assets/img/services/webapp.png", class="img-responsive", alt="Services Web Applications Image")
 				div(aria-labelledby="social-tab", class="tab-pane fade", id="social", role="tabpanel")
 					.col-xs-12.col-md-6
 						h2 Social Media
@@ -62,24 +63,64 @@ section#services.container
 						span.dash-serv
 						p.more-link Learn More
 					.col-xs-12.col-md-6
-						img(src="../assets/img/services/social-media.png", alt="Services Social Media Image", width="350px", height="250px")
+						img(src="../assets/img/services/social-media.png", class="img-responsive", alt="Services Social Media Image")
+		// Mobile Mode
 		.col-xs-12.col-md-12.mob-mode
 			div(class="panel-group", id="accordion", role="tablist", aria-multiselectable="true")
 				div(class="panel panel-default")
-					div(class="panel-heading", role="tab", id="headingOne")
+					div(class="panel-heading", role="tab", id="vidTab")
 						h4.panel-title
-							a(role="button", data-toggle="collapse", data-parent="#accordion", href="#vidpro", aria-expanded="true", aria-controls="vidpro") Video Production
+							a(role="button", data-toggle="collapse", data-parent="#accordion", href="#collapseVid", aria-expanded="true", aria-controls="collapseVid") Video Production
 								.panel-diamond
-									h1.glyphicon.glyphicon-export
-					div(id="vidpro", class="panel-collapse collapse in", role="tabpanel", aria-labelledby="headingOne")
-						div.panel-body
-							p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium enim, aut voluptatum beatae quam laborum quis optio amet, veritatis quaerat animi natus sunt, debitis libero! Aut fuga eos accusamus eum?
+									h1.glyphicon.glyphicon-facetime-video
+					div(id="collapseVid", class="panel-collapse collapse in", role="tabpanel", aria-labelledby="vidTab")
+						.panel-body
+							img(src="../assets/img/services/vid-pro.png", class="img-responsive", alt="Services Video Production Image")
+							.caption
+								h3 Video Production
+								p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis aliquid ea, asperiores aliquam fuga aspernatur quaerat deserunt dignissimos accusamus odio soluta, eum rem animi quibusdam repellat veniam assumenda id, nam.
+								span.dash-serv
+								.more-link Learn More
 				div(class="panel panel-default")
-					div(class="panel-heading", role="tab", id="headingTwo")
+					div(class="panel-heading", role="tab", id="photoTab")
 						h4.panel-title
-							a(class="collapsed", role="button", data-toggle="collapse", data-parent="#accordion", href="#photo", aria-expanded="false", aria-controls="photo") Photography
+							a(class="collapsed", role="button", data-toggle="collapse", data-parent="#accordion", href="#collapsePhoto", aria-expanded="false", aria-controls="collapsePhoto") Photography
 								.panel-diamond
-									h1.glyphicon.glyphicon-export
-					div(id="photo", class="panel-collapse collapse", role="tabpanel", aria-labelledby="headingTwo")
-						div.panel-body
-							p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium enim, aut voluptatum beatae quam laborum quis optio amet, veritatis quaerat animi natus sunt, debitis libero! Aut fuga eos accusamus eum?
+									h1.glyphicon.glyphicon-camera
+					div(id="collapsePhoto", class="panel-collapse collapse", role="tabpanel", aria-labelledby="photoTab")
+						.panel-body
+							img(src="../assets/img/services/photo.jpg", class="img-responsive", alt="Services Video Production Image")
+							.caption
+								h3 Photography
+								p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis aliquid ea, asperiores aliquam fuga aspernatur quaerat deserunt dignissimos accusamus odio soluta, eum rem animi quibusdam repellat veniam assumenda id, nam.
+								span.dash-serv
+								.more-link Learn More
+				div(class="panel panel-default")
+					div(class="panel-heading", role="tab", id="webTab")
+						h4.panel-title
+							a(class="collapsed", role="button", data-toggle="collapse", data-parent="#accordion", href="#collapseWeb", aria-expanded="false", aria-controls="collapseWeb") Web D & D
+								.panel-diamond
+									h1.glyphicon.glyphicon-blackboard
+					div(id="collapseWeb", class="panel-collapse collapse", role="tabpanel", aria-labelledby="webTab")
+						.panel-body
+							img(src="../assets/img/services/website-development.png", class="img-responsive", alt="Services Video Production Image")
+							.caption
+								h3 Web Design & Development
+								p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis aliquid ea, asperiores aliquam fuga aspernatur quaerat deserunt dignissimos accusamus odio soluta, eum rem animi quibusdam repellat veniam assumenda id, nam.
+								span.dash-serv
+								.more-link Learn More
+				div(class="panel panel-default")
+					div(class="panel-heading", role="tab", id="appTab")
+						h4.panel-title
+							a(class="collapsed", role="button", data-toggle="collapse", data-parent="#accordion", href="#collapseApp", aria-expanded="false", aria-controls="collapseApp") Applications
+								.panel-diamond
+									h1.glyphicon.glyphicon-list-alt
+					div(id="collapseApp", class="panel-collapse collapse", role="tabpanel", aria-labelledby="appTab")
+						.panel-body
+							img(src="../assets/img/services/webapp.png", class="img-responsive", alt="Services Video Production Image")
+							.caption
+								h3 Applications
+								p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis aliquid ea, asperiores aliquam fuga aspernatur quaerat deserunt dignissimos accusamus odio soluta, eum rem animi quibusdam repellat veniam assumenda id, nam.
+								span.dash-serv
+								.more-link Learn More
+		// End of Mobile Mode

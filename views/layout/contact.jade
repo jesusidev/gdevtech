@@ -1,0 +1,18 @@
+section#contact.container
+	.row.top-buffer
+		.col-xs-12.col-md-12
+			h1.text-center.title Contact G Dev Tech
+			h4.text-center.sub-title - We Will Make Sure To Respond Back -
+		.col-xs-12.col-md-12
+			form.contact-form
+				.name
+					label(for="name") Full Name
+					input(type="text", id="name" required)
+				.email
+					label(for="email") Email
+					input(type="email", id="email" required)
+				.message
+					label(for="message") Message
+					textarea(name="message", id="message" required)
+				.submit
+					input(type="submit", value="SEND MESSAGE", class="button")

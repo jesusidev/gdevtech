@@ -22,6 +22,8 @@
 	background-color: $main-color
 	height: 150px
 	width: 220px
+	@media (max-width: 1199px)
+		width: 180px
 .nav-tabs>li>a
 	text-align: center
 	color: #666
@@ -30,6 +32,8 @@
 	width: 220px
 	&:hover
 		background-color: white
+	@media (max-width: 1199px)
+		width: 180px
 .med-diamond-serv
 	position: absolute
 	top: 47px
@@ -54,7 +58,7 @@
 .panel-title
 	padding: 10px 15px 65px 15px
 	text-align: center
-	padding-left: 55px
+	padding-left: 50px
 	a
 		text-decoration: none
 		&:hover
@@ -71,7 +75,7 @@
 	transform(rotate(45deg))
 	box-shadow(2px 2px 7px 1px grey)
 	@media (max-width: 991px)
-		left: -150px
+		left: -50%
 		width: 40px
 		height: 40px
 		top: 30px
