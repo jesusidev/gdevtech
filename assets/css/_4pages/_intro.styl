@@ -32,14 +32,18 @@
 .intro-section .btn-primary
 	margin: 0
 	position: absolute
-	background-color: $main-color
+	background-color: rgba(0, 40, 213, 0);
+	border: 2px solid $main-color
 	padding: 15px 35px
 	text-transform: uppercase
 	cursor: pointer
 	top: 75%
 	left: 50%
 	margin-right: -50%
+	transition(background-color 0.5s)
 	transform(translate(-50%, -50%))
+	&:hover
+		background-color: $main-color
 .container-intro
 	width: 70%
 	text-align: center

@@ -1,0 +1,46 @@
+.footer-section
+	height: 80px
+	background-color: $main-color
+	border-bottom 5px solid black
+.social-icons
+	border-bottom: 5px solid #fff;
+	height: 80px;
+.med-diamond
+	position: relative
+	top: 15px
+	left: 15%
+	width: 45px
+	height: 45px
+	display: inline-block
+	margin-left: 30px
+	border: 1px solid white
+	color: white
+	transition(background-color 0.5s,)
+	&:hover
+		cursor: pointer
+		color: $main-color
+		background-color: white
+	transform(rotate(45deg))
+	@media (max-width: 767px)
+		left: 7%
+		width: 30px
+		height: 30px
+		top: 20px
+.med-diamond>h1
+	transform(rotate(-45deg))
+	position: relative
+	right: -14px
+	top: -6px
+	font-size: 18px
+	@media (max-width: 767px)
+		right: -7px
+		top: -12px
+		font-size: 14px
+footer>.container
+	margin-top: 20px
+	nav>a
+		padding: 10px
+		@media (max-width: 767px)
+			display: none
+.copy-right
+	text-align: center

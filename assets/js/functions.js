@@ -1,4 +1,18 @@
 $(function() {
+
+    $('a[href="#nav"], a[href="#home"], a[href^="#intro"], a[href^="#about"], a[href^="#services"], a[href^="#works"], a[href^="#contact"]').on('click',function (e) {
+        e.preventDefault();
+
+        var target = this.hash;
+        var $target = $(target);
+
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top
+        }, 900, 'swing', function () {
+            window.location.hash = target;
+        });
+    });
+
     var offset = 400;
     var duration = 500;
     console.log(($(window).scroll))
@@ -32,17 +46,7 @@ $(function() {
             }
         });
     });
-    $('.count-diamond').each(function () {
-        $(this).prop('Counter',0).animate({
-            Counter: $(this).text()
-        }, {
-            duration: 4000,
-            easing: 'swing',
-            step: function (now) {
-                $(this).text(Math.ceil(now));
-            }
-        });
-    });
+
     $('#myTabs a').click(function (e) {
     e.preventDefault();
     $(this).tab('show');

@@ -3,12 +3,11 @@
 .navbar
 	background-color: $main-color
 .active
-	background-color: #3e7ae3
+	background-color: $main-color
 	border-bottom: 3px solid white
 .navbar-brand
 	padding-top: 0
 	color: white
-	background-color: #3E7AE3
     width: 102px
     float: left
     position: absolute
@@ -20,7 +19,7 @@
 		border-bottom: 3px solid white
 		padding-bottom: 12px
 .navbar-brand>img
-	width: 65px
+	width: 75px
 	@media (max-width: 991px)
 		margin-left 10px
 .navbar-nav
@@ -30,9 +29,9 @@
 .nav>li>a
 	color: white
 	&:focus
-		background-color: #3e7ae3
+		background-color: $main-color
 	&:hover
-		background-color: #3e7ae3
+		background-color: $main-color
 		text-decoration: none
 		border-bottom: 3px solid white
 		padding-bottom: 12px

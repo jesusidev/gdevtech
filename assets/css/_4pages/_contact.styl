@@ -1,13 +1,14 @@
 .contact-form 
   background: #ffffff
   height: auto
-  margin: 100px auto
-  max-width: 500px
+  margin: 50px auto
+  max-width: 80%
   overflow: hidden
   width: 65%
   @media (max-width: 991px) 
-    margin: 0 0 100px
+    margin: 0 0 50px
     width: 100%
+    max-width: 100%
   
 
 .contact-form .email, .contact-form .message, .contact-form .name 
@@ -18,15 +19,12 @@
   left: 23px
   position: absolute
   top: 23px
-  -moz-transition: all, 150ms
-  -o-transition: all, 150ms
-  -webkit-transition: all, 150ms
-  transition: all, 150ms
+  transition(top 150ms)
 
 .contact-form .email.typing label, .contact-form .message.typing label, .contact-form .name.typing label 
   color: #3498db
   font-size: 10px
-  top: 7px
+  top: 10px
 
 .contact-form .email, .contact-form .name 
   width: calc(50% - 1px)
@@ -50,6 +48,7 @@
 .contact-form .message 
   border-bottom: 1px #e6e6e6 solid
   border-top: 1px #e6e6e6 solid
+  padding-top: 10px
   clear: both
 
 .contact-form .message textarea 
@@ -69,25 +68,23 @@
   display: block
   background: none
   margin: 0 auto
-  border: 1px #3498db solid
+  border: 1px $main-color solid
   color: black
   padding: 9px 0
   width: 100%
+  transition(background 1s)
   &:hover
     color:white
-  @media (max-width: 500px)
+    background: $main-color
+  @media (max-width: 991px)
     float: none
-  
-
-.contact-form .submit .button:hover 
-  background: $main-color
 
 .contact-form .submit .button:active 
-  background: #258cd1
+  background: $main-color
 
 .contact-form .submit .button:focus 
-  border-color: #b6daf2
-  -moz-box-shadow: #75b9e7 0 0 4px 1px, #75b9e7 0 0 4px 1px inset
-  -webkit-box-shadow: #75b9e7 0 0 4px 1px, #75b9e7 0 0 4px 1px inset
-  box-shadow: #75b9e7 0 0 4px 1px, #75b9e7 0 0 4px 1px inset
+  border-color: $main-color
+  -moz-box-shadow: $main-color 0 0 4px 1px, $main-color 0 0 4px 1px inset
+  -webkit-box-shadow: $main-color 0 0 4px 1px, $main-color 0 0 4px 1px inset
+  box-shadow: $main-color 0 0 4px 1px, $main-color 0 0 4px 1px inset
   
