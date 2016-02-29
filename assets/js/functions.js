@@ -1,5 +1,27 @@
 $(function() {
 
+    var floatNav = $('.float-nav'),
+        mainContent = $('.main-content');
+
+    floatNav.on('click', function(e) {
+      $(this).toggleClass('closed');
+      e.stopPropagation();
+      e.preventDefault();
+    });
+
+    mainContent.on('click', function() {
+      if (!floatNav.hasClass('closed')) floatNav.addClass('closed');
+    });
+
+    $(window).scroll(function (){
+        if ($(window).scrollTop() > 517){
+            $('.float-nav').css("display", "block");
+        }
+        if ($(window).scrollTop() < 517){
+            $('.float-nav').css("display", "none");
+        }
+    });
+
     $('a[href="#nav"], a[href="#home"], a[href^="#intro"], a[href^="#about"], a[href^="#services"], a[href^="#works"], a[href^="#contact"]').on('click',function (e) {
         e.preventDefault();
 
@@ -13,39 +35,18 @@ $(function() {
         });
     });
 
-    var offset = 400;
-    var duration = 500;
-    console.log(($(window).scroll))
-    $(window).scroll(function() {
-        if ($(this).scrollTop() > offset) {
-            $('.top').fadeIn(duration);
-        } else {
-            $('.top').fadeOut(duration);
+     $(window).scroll(function (){
+        if ($(window).scrollTop() === 2100){
+            initSkillbar();
         }
     });
-    
-    $('.top').click(function(event) {
-        event.preventDefault();
-        $('html, body').animate({scrollTop: 0}, 1500);
-        return false;
-    })
-
-    $('.skillbar').each(function(){
-        $(this).find('.skillbar-bar').animate({
-            width:$(this).attr('data-percent')
-        },4150);
-    });
-    $('.count').each(function () {
-        $(this).prop('Counter',0).animate({
-            Counter: $(this).text()
-        }, {
-            duration: 4000,
-            easing: 'swing',
-            step: function (now) {
-                $(this).text(Math.ceil(now)+'%');
-            }
+     function initSkillbar(){
+        $('.skillbar').each(function(){
+            $(this).find('.skillbar-bar').animate({
+                width:$(this).attr('data-percent')
+            },4150);
         });
-    });
+     };
 
     $('#myTabs a').click(function (e) {
     e.preventDefault();
@@ -78,6 +79,12 @@ $(function() {
       if( $(this).val().length == 0 ) {
           $('.message').removeClass('typing');
       }
+    });
+
+    /* Typed.js */
+    $(".el-typed").typed({
+      strings: ["Ready..", "Set...", "Lets Make Your Dreams Come True!"],
+      typeSpeed: 200
     });
      
 });

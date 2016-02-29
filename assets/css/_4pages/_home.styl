@@ -102,7 +102,7 @@ header>p
 	color: black
 	transform(rotate(-45deg))
 	position: relative
-	right: -17px
+	right: -13px
 	top: -3px
 	font-size: 27px
 	@media (max-width: 991px)
@@ -135,6 +135,14 @@ header>p
 		right: -10px
 		top: -10px
 		font-size: 22px
+.small-diamond-even>h1:nth-last-child(1)
+	font-size: 45px
+	right: -19px
+	top: -12px
+	@media (max-width: 991px)
+		font-size: 35px
+		right: -12px
+		top: -17px
 .dash
 	display: block
 	position: relative
@@ -145,34 +153,24 @@ header>p
 	@media (max-width: 991px)
 		display: none
 .diamond-logo
-	width: 0
-	height: 0
-	border: 115px solid transparent
-	border-bottom-color: $main-color
+	margin-top: 77px
+	width: 150px
+	height: 150px
+	background-color: $main-color
 	position: relative
-	top: -85px
-	left: 70px
-	@media (max-width: 991px)
-		display: none
-.diamond-logo:after
-	content: ''
-	position: absolute
-	left: -115px
-	top: 115px
-	width: 0
-	height: 0
-	border: 115px solid transparent
-	border-top-color: $main-color
+	top: -8px
+	left: 100px
+	transform(rotate(45deg))
+	box-shadow(2px 2px 7px 1px grey)
 	@media (max-width: 991px)
 		display: none
 .diamond-logo>img
 	position: relative
 	z-index: 100
-	top: 65px
-	left: -74px
-	height: 105px
-	@media (max-width: 991px)
-		display: none
+	top: 24px
+	left: -5px
+	height: 115px
+	transform(rotate(-45deg))
 .nth-row
 	margin-left: -15px
 	margin-right: -15px

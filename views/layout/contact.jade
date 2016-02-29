@@ -4,15 +4,16 @@ section#contact.container
 			h1.text-center.title Contact G Dev Tech
 			h4.text-center.sub-title - We Will Make Sure To Respond Back -
 		.col-xs-12.col-md-12
-			form.contact-form
+			form(class="contact-form", action="//formspree.io/jesus@guzman1.com", method="POST")
 				.name
 					label(for="name") Full Name
-					input(type="text", id="name" required)
+					input(type="text", name="name", id="name" required)
 				.email
 					label(for="email") Email
-					input(type="email", id="email" required)
+					input(type="email", name="_replyto", id="email" required)
 				.message
 					label(for="message") Message
 					textarea(name="message", id="message" required)
 				.submit
+					input(type="hidden", name="_next", value="http://gdevtech.co/")
 					input(type="submit", value="SEND MESSAGE", class="button")

@@ -3,22 +3,28 @@ section#works.container
 		.col-xs-12.col-md-12
 			h1.text-center.title Recent Works
 			h4.text-center.sub-title - Lets show you what we got -
-	.row
+	.row.top-buffer
 		.col-lg-4.col-sm-4.col-6
-			a(href="#", title="WEbsite 1")
-				img(src="//placehold.it/600x350", class="thumbnail img-responsive", alt="Recent Works, Laurel Symone Website Tumbnail, Developed by G Dev Tech")
+			a(href="#", title="LaurelSymone")
+				img(src="assets/img/works/LS.PNG", class="thumbnail img-responsive", alt="Recent Works, Laurel Symone Website Tumbnail, Developed by G Dev Tech")
+				a(href="http://laurelsymone.com/", target="_blank")
+					button.btn.btn-primary Visit Site
 		.col-lg-4.col-sm-4.col-6
-			a(href="#", title="Website 2")
-				img(src="//placehold.it/600x350", class="thumbnail img-responsive", alt="Recent Works, Laurel Symone Website Tumbnail, Developed by G Dev Tech")
+			a(href="#", title="McAuley's Malamutes")
+				img(src="assets/img/works/sw.PNG", class="thumbnail img-responsive", alt="Recent Works, McAuley's Malamutes Website Tumbnail, Developed by G Dev Tech")
+				a(href="https://swmalamutes.com/", target="_blank")
+					button.btn.btn-primary Visit Site
 		.col-lg-4.col-sm-4.col-6
-			a(href="#", title="Website 3")
-				img(src="//placehold.it/600x350", class="thumbnail img-responsive", alt="Recent Works, Laurel Symone Website Tumbnail, Developed by G Dev Tech")
+			a(href="#", title="Website Default Templete")
+				img(src="assets/img/works/TS.png", class="thumbnail img-responsive", alt="Recent Works, Website Default Templete Tumbnail, Developed by G Dev Tech")
+				a(href="http://guzman1.com/aot/publish/", target="_blank")
+					button.btn.btn-primary Visit Site
 	div(id="myModal", class="modal fade", tabindex="-1", role="dialog")
 		.modal-dialog
 			.modal-content
 				.modal-header
 					button(class="close", data-dismiss="modal", type="button") X
-					h3.modal-title Heading
+					h3.modal-title
 				.modal-body
 				.modal-footer
 					button(class="btn btn-default", data-dismiss="modal") Close
@@ -26,4 +32,4 @@ section#works.container
 	.container-works
 		h1 Are You Impressed By My Work?
 		p No need to hold your breath, just reach out so we can talk...
-		.btn-primary Get In Touch
+		a(href="#contact", class="btn-primary") Get In Touch

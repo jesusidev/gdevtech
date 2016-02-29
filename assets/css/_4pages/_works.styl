@@ -1,3 +1,13 @@
+#works
+	.btn-primary
+		color: black
+		display: block
+		margin: 0 auto 15px auto
+		&:hover
+			color: white
+			border: 2px solid white
+.thumbnail
+	border 1px solid $main-color
 .works-section
 	height: 350px
 	background-image: url('../img/works/worksbg.jpg')
@@ -33,35 +43,38 @@
 	left: 50%
 	margin-right: -50%
 	transform(translate(-50%, -50%))
-.works-section .btn-primary
-	margin: 0
-	position: absolute
-	background-color: rgba(0, 40, 213, 0);
-	border: 2px solid $main-color
-	padding: 15px 35px
-	text-transform: uppercase
-	cursor: pointer
-	top: 75%
-	left: 50%
-	margin-right: -50%
-	transition(background-color 0.5s)
-	transform(translate(-50%, -50%))
-	&:hover
-		background-color: $main-color
 .container-works
 	width: 70%
 	text-align: center
 	@media (max-width: 767px)
 		width: 90%
-.container-works>h4
+	.btn-primary
+		margin: 0
+		position: absolute
+		background-color: rgba(0, 40, 213, 0);
+		border: 2px solid $main-color
+		padding: 15px 35px
+		text-transform: uppercase
+		cursor: pointer
+		top: 75%
+		left: 50%
+		margin-right: -50%
+		transition(background-color 0.5s)
+		transform(translate(-50%, -50%))
+		&:hover
+			background-color: $main-color
+			text-decoration: none
+		@media (max-width: 767px)
+			margin-top: 15px
+.container-works>h1
 	text-transform: uppercase
 	font-size: 18px
 	word-spacing: 2px
 	letter-spacing: 1px
 	@media (max-width: 767px)
-		font-size: 13px
+		font-size: 23px
 .container-works>p
 	font-size: 2em
 	@media (max-width: 767px)
-		font-size: 20px
+		font-size: 16px
 		margin-top: 30px
