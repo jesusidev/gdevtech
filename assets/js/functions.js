@@ -1,12 +1,18 @@
 $(function() {
 
     var floatNav = $('.float-nav'),
+        barsShow = $('.toggle'),
         mainContent = $('.main-content');
 
     floatNav.on('click', function(e) {
       $(this).toggleClass('closed');
       e.stopPropagation();
       e.preventDefault();
+    });
+    
+    barsShow.on('click', function(e){
+        $(this).toggleClass('fa fa-bars');
+        e.preventDefault();
     });
 
     mainContent.on('click', function() {
@@ -35,18 +41,12 @@ $(function() {
         });
     });
 
-     $(window).scroll(function (){
-        if ($(window).scrollTop() === 2100){
-            initSkillbar();
-        }
-    });
-     function initSkillbar(){
+
         $('.skillbar').each(function(){
             $(this).find('.skillbar-bar').animate({
                 width:$(this).attr('data-percent')
             },4150);
         });
-     };
 
     $('#myTabs a').click(function (e) {
     e.preventDefault();
@@ -83,8 +83,8 @@ $(function() {
 
     /* Typed.js */
     $(".el-typed").typed({
-      strings: ["Ready..", "Set...", "Lets Make Your Dreams Come True!"],
-      typeSpeed: 200
+      strings: ["Looking for an online presence?", "Let's start with your dream...", "..and finish with your goal!", "Your Journey Begins Here!"],
+      typeSpeed: 100
     });
-     
+
 });

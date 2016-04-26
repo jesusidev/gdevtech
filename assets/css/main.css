@@ -972,13 +972,37 @@ header>p {
   color: #000;
   display: block;
   margin: 0 auto 15px auto;
+  -webkit-transition: background-color 0.5s , color 1s;
+  -moz-transition: background-color 0.5s , color 1s;
+  -ms-transition: background-color 0.5s , color 1s;
+  -o-transition: background-color 0.5s , color 1s;
+  transition: background-color 0.5s , color 1s;
 }
 #works .btn-primary:hover {
+  background-color: #22a7f0;
+  border-color: #22a7f0;
+  text-decoration: none;
   color: #fff;
-  border: 2px solid #fff;
 }
 .thumbnail {
   border: 1px solid #22a7f0;
+  -webkit-box-shadow: 5px 6px 7px rgba(128,128,128,0.4);
+  -moz-box-shadow: 5px 6px 7px rgba(128,128,128,0.4);
+  -ms-box-shadow: 5px 6px 7px rgba(128,128,128,0.4);
+  -o-box-shadow: 5px 6px 7px rgba(128,128,128,0.4);
+  box-shadow: 5px 6px 7px rgba(128,128,128,0.4);
+  -webkit-transition: box-shadow 0.5s;
+  -moz-transition: box-shadow 0.5s;
+  -ms-transition: box-shadow 0.5s;
+  -o-transition: box-shadow 0.5s;
+  transition: box-shadow 0.5s;
+}
+.thumbnail:hover {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
 }
 .works-section {
   height: 350px;
