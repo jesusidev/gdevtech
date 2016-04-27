@@ -3,3 +3,5 @@ node_modules/
 sftp-config.json
 sublime-gulp.log
 gdevtech.sublime-project
+gdevtech.sublime-workspace
+.gitignore
