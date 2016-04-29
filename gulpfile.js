@@ -47,14 +47,12 @@ gulp.task('watch', function(){
 		'assets/css/_1tools/*.styl',
 		'assets/css/_2basics/*.styl',
 		'assets/css/_3modules/*.css',
-		'assets/css/_4pages/*.styl'
-		],['styles']);
-	// Watching Jade Files
-	gulp.watch([
-		'views/index.jade',
+		'assets/css/_4pages/*.styl',
+    // Watching Jade Files
+        'views/index.jade',
 		'views/layout/*.jade',
 		'views/partials/*.jade'
-		],['templates']);
+		],['styles', 'templates']);
 });
 
 // Connect to webserver with livereload
