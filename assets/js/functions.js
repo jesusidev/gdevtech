@@ -1,7 +1,6 @@
 $(function() {
 
     var floatNav = $('.float-nav'),
-        barsShow = $('.toggle'),
         mainContent = $('.main-content');
 
     floatNav.on('click', function(e) {
@@ -9,16 +8,12 @@ $(function() {
       e.stopPropagation();
       e.preventDefault();
     });
-    
-    barsShow.on('click', function(e){
-        $(this).toggleClass('fa fa-bars');
-        e.preventDefault();
-    });
 
     mainContent.on('click', function() {
       if (!floatNav.hasClass('closed')) floatNav.addClass('closed');
     });
 
+    $('.float-nav').css("display", "none");
     $(window).scroll(function (){
         if ($(window).scrollTop() > 517){
             $('.float-nav').css("display", "block");
@@ -74,9 +69,24 @@ $(function() {
       }
     });
 
+    // Animate Arrow
+    if( $('.arrow-circle').hasClass('bounceInUp') ) {
+        setTimeout(function(){
+            $('.arrow-circle').removeClass('bounceInUp');
+            $('.arrow-circle').addClass('infinite bounce');
+        }, 1500);
+    }
+    $(window).scroll(function (){
+        if ( $(window).scrollTop() > 50) {
+            $('.arrow-circle').removeClass('infinite bounce');
+        } else {
+            $('.arrow-circle').addClass('infinite bounce');
+        }
+    });
+
     /* Typed.js */
     $(".el-typed").typed({
-      strings: ["Looking for an online presence?", "Let's start with your dream...", "..and finish with your goal!", "Your Journey Begins Here!"],
+      strings: ["Ready To Branch Out?", "Let's start with your dream...", "..and finish with your vision!", "Your Journey Begins Here!"],
       typeSpeed: 100
     });
 
