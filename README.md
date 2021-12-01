@@ -1,4 +1,4 @@
-# Website for [G Dev Tech](http://gdevtech.co/)
+# Website for [G Dev Tech](http://gdevtech.vercel.app/)
 
 <img align="left" src="https://api.daily.dev/devcards/545e4d6c5ed64de69c47ae184844e483.png?r=x7o" width="400" alt="Jesus Guzman's Dev Card">
 
