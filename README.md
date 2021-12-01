@@ -1,5 +1,7 @@
 # Website for [G Dev Tech](http://gdevtech.co/)
 
+<img align="left" src="https://api.daily.dev/devcards/545e4d6c5ed64de69c47ae184844e483.png?r=x7o" width="400" alt="Jesus Guzman's Dev Card">
+
 ## This is a free theme that can be used for personal use.
 ## This Theme is built with Stylus, Jade, and Gulp
 
